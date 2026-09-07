@@ -1,0 +1,45 @@
+NAME:
+   tea issues - List, create and update issues
+
+USAGE:
+   tea issues [command [command options]] [<issue index>]
+
+CATEGORY:
+   ENTITIES
+
+DESCRIPTION:
+   Lists issues when called without argument. If issue index is provided, will show it in detail.
+
+COMMANDS:
+   list, ls      List issues of the repository
+   create, c     Create an issue on repository
+   edit, e       Edit one or more issues
+   reopen, open  Change state of one or more issues to 'open'
+   close         Change state of one ore more issues to 'closed'
+
+OPTIONS:
+   --comments                      Whether to display comments (will prompt if not provided & run interactively)
+   --fields string, -f string      Comma-separated list of fields to print. Available values:
+                                       index,state,kind,author,author-id,url,title,body,created,updated,deadline,assignees,milestone,labels,comments,owner,repo
+                                      (default: "index,title,state,author,milestone,labels,owner,repo")
+   --state string                  Filter by state (all|open|closed) (default: open)
+   --kind issues, -K issues        Whether to return issues, `pulls`, or `all` (you can use this to apply advanced search filters to PRs) (default: issues)
+   --keyword string, -k string     Filter by search string
+   --labels string, -L string      Comma-separated list of labels to match issues against.
+   --milestones string, -m string  Comma-separated list of milestones to match issues against.
+   --author string, -A string      
+   --assignee string, -a string    
+   --mentions string, -M string    
+   --owner string, --org string    
+   --from string, -F string        Filter by activity after this date
+   --until string, -u string       Filter by activity before this date
+   --page int, -p int              specify page (default: 1)
+   --limit int, --lm int           specify limit of items per page (default: 30)
+   --repo string, -r string        Override local repository path or gitea repository slug to interact with. Optional
+   --remote string, -R string      Discover Gitea login from remote. Optional
+   --login string, -l string       Use a different Gitea Login. Optional
+   --output string, -o string      Output format. (simple, table, csv, tsv, yaml, json)
+   --help, -h                      show help
+
+GLOBAL OPTIONS:
+   --debug, --vvv  Enable debug mode

@@ -1,0 +1,47 @@
+NAME:
+   tea api - Make an authenticated API request
+
+USAGE:
+   tea api [options] <endpoint>
+
+CATEGORY:
+   HELPERS
+
+DESCRIPTION:
+   Makes an authenticated HTTP request to the Gitea API and prints the response.
+
+   The endpoint argument is the path to the API endpoint, which will be prefixed
+   with /api/v1/ if it doesn't start with /api/ or http(s)://.
+
+   Placeholders like {owner} and {repo} in the endpoint will be replaced with
+   values from the current repository context.
+
+   Use -f for string fields and -F for typed fields (numbers, booleans, null).
+   With -F, prefix value with @ to read from file (@- for stdin). Values starting
+   with [ or { are parsed as JSON arrays/objects. Wrap values in quotes to force
+   string type (e.g., -F key="null" for literal string "null").
+
+   Use -d/--data to send a raw JSON body. Use @file to read from a file, or @-
+   to read from stdin. The -d flag cannot be combined with -f or -F.
+
+   When a request body is provided via -f, -F, or -d, the method defaults to POST
+   unless explicitly set with -X/--method.
+
+   Note: if your endpoint contains ? or &, quote it to prevent shell expansion
+   (e.g., '/repos/{owner}/{repo}/issues?state=open').
+
+OPTIONS:
+   --method string, -X string                                 HTTP method (GET, POST, PUT, PATCH, DELETE) (default: "GET")
+   --field string, -f string [ --field string, -f string ]    Add a string field to the request body (key=value)
+   --Field string, -F string [ --Field string, -F string ]    Add a typed field to the request body (key=value, @file, or @- for stdin)
+   --header string, -H string [ --header string, -H string ]  Add a custom header (key:value)
+   --data string, -d string                                   Raw JSON request body (use @file to read from file, @- for stdin)
+   --include, -i                                              Include HTTP status and response headers in output (written to stderr)
+   --output string, -o string                                 Write response body to file instead of stdout (use '-' for stdout)
+   --login string, -l string                                  Use a different Gitea Login. Optional
+   --repo string, -r string                                   Override local repository path or gitea repository slug to interact with. Optional
+   --remote string, -R string                                 Discover Gitea login from remote. Optional
+   --help, -h                                                 show help
+
+GLOBAL OPTIONS:
+   --debug, --vvv  Enable debug mode

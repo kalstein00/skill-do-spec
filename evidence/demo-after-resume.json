@@ -1,0 +1,304 @@
+{
+  "schema_version": 1,
+  "id": "8978c8c95c6b4e5bb1a121941630c7f2",
+  "plan_hash": "0b8eb65716eca5359a51a5fb2d9b9c9bc2dbbd36bbcbe1662e35f99dd6bd6af5",
+  "status": "SUCCEEDED",
+  "worktree": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.demo\\release-fail5\\state\\worktrees\\8978c8c95c6b4e5bb1a121941630c7f2",
+  "branch": "codex/do-spec-8978c8c95c6b4e5bb1a121941630c7f2",
+  "head": "e0fab1c4ddf09c992331916035ee065939ce6a4f",
+  "dispatch": "4cad70c3cb1547e58cdbc9be172d0ee1",
+  "tickets": {
+    "1": {
+      "status": "ACCEPTED",
+      "next": "IN_PROGRESS",
+      "attempts": [
+        {
+          "id": "45d1cff57673412193c59bc1a9c5dc3f",
+          "mode": "rerun-agent",
+          "started_at": 1788790926.371727,
+          "base_head": "c78649a8369249827b0b8c1b499f4dd1f5116bb0",
+          "context_hash": "55fa04bdc107d66acbdf413e543d9180d333e0be31fec5f882789610ec8c9caf",
+          "process": {
+            "pid": 22720,
+            "started_at": 1788790927.8360243,
+            "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe",
+            "cwd": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.demo\\release-fail5\\state\\worktrees\\8978c8c95c6b4e5bb1a121941630c7f2",
+            "ended_at": 1788790927.9684496,
+            "exit_code": 0,
+            "outcome": "EXITED",
+            "tree_termination": "CONFIRMED_JOB_EMPTY"
+          },
+          "verified_tree": "420a152b8234226789f4edaa52bdc6ad120745b4c02550102ae03679d70bd4ed",
+          "git_tree": "ea06424797683a2cd2fc10e4f67d54abba1ae31f",
+          "commit": "1ae8b1d19600d91af8173edef5c158cf3116780c",
+          "outcome": "ACCEPTED"
+        }
+      ],
+      "mode": "rerun-agent"
+    },
+    "2": {
+      "status": "ACCEPTED",
+      "next": "IN_PROGRESS",
+      "attempts": [
+        {
+          "id": "2e34289ef61546459b7341ede6d0e0ea",
+          "mode": "rerun-agent",
+          "started_at": 1788790935.3004048,
+          "base_head": "1ae8b1d19600d91af8173edef5c158cf3116780c",
+          "context_hash": "39518cbcb1fdcbaf8943a5a5298cd0926581ab1668b6246f680cf3926383ea15",
+          "process": {
+            "pid": 19784,
+            "started_at": 1788790936.7575083,
+            "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe",
+            "cwd": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.demo\\release-fail5\\state\\worktrees\\8978c8c95c6b4e5bb1a121941630c7f2",
+            "ended_at": 1788790936.8917813,
+            "exit_code": 0,
+            "outcome": "EXITED",
+            "tree_termination": "CONFIRMED_JOB_EMPTY"
+          },
+          "verified_tree": "ba35f6360a9914c1703855ea4b931eca2e55041c06e583238f580985aa4612d7",
+          "git_tree": "bb016d61a59e651bb3002b2a39eb65d3170f28e0",
+          "commit": "84d65204f8764d49875439696141e31b9111a613",
+          "outcome": "ACCEPTED"
+        }
+      ],
+      "mode": "rerun-agent"
+    },
+    "3": {
+      "status": "ACCEPTED",
+      "next": "IN_PROGRESS",
+      "attempts": [
+        {
+          "id": "f3b244d675c647fe8442b9044292d939",
+          "mode": "rerun-agent",
+          "started_at": 1788790944.0247307,
+          "base_head": "84d65204f8764d49875439696141e31b9111a613",
+          "context_hash": "4b1196d52464f8a1f84ca6d238c924d0a6d8acf224dc691579888f738d9f069f",
+          "process": {
+            "pid": 17532,
+            "started_at": 1788790945.445876,
+            "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe",
+            "cwd": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.demo\\release-fail5\\state\\worktrees\\8978c8c95c6b4e5bb1a121941630c7f2",
+            "ended_at": 1788790945.5789516,
+            "exit_code": 0,
+            "outcome": "EXITED",
+            "tree_termination": "CONFIRMED_JOB_EMPTY"
+          },
+          "verified_tree": "e2ddb9de015428fb1d802fd0d176481e586451d52f168641803ed406edc26fc6",
+          "git_tree": "cc38a3dea1fe7146a6908fbf37638259fb33cf88",
+          "commit": "140a42d6927be4f6c6cdce1e5a787f6f0f48c0dd",
+          "outcome": "ACCEPTED"
+        }
+      ],
+      "mode": "rerun-agent"
+    },
+    "4": {
+      "status": "ACCEPTED",
+      "next": "IN_PROGRESS",
+      "attempts": [
+        {
+          "id": "23416dc20f3f4daf88972dbc6fdd0562",
+          "mode": "rerun-agent",
+          "started_at": 1788790952.8825402,
+          "base_head": "140a42d6927be4f6c6cdce1e5a787f6f0f48c0dd",
+          "context_hash": "e95b968e08abd74be62e32455ec53443b6076c91dcf0369cae7be6027e4e725f",
+          "process": {
+            "pid": 4196,
+            "started_at": 1788790954.3186245,
+            "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe",
+            "cwd": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.demo\\release-fail5\\state\\worktrees\\8978c8c95c6b4e5bb1a121941630c7f2",
+            "ended_at": 1788790954.453307,
+            "exit_code": 0,
+            "outcome": "EXITED",
+            "tree_termination": "CONFIRMED_JOB_EMPTY"
+          },
+          "verified_tree": "82bf85085b585daa1ccd56160130981f38b02bac7dfec014c66b07a4f1870292",
+          "git_tree": "00edc47995406fcce7d2189a08ae2f405a0a8ba0",
+          "commit": "81c8e065e841c302805ca3c1aa4958ea7d27bc96",
+          "outcome": "ACCEPTED"
+        }
+      ],
+      "mode": "rerun-agent"
+    },
+    "5": {
+      "status": "ACCEPTED",
+      "next": "IN_PROGRESS",
+      "attempts": [
+        {
+          "id": "adf054aacb1d4449907949cc69a9ae05",
+          "mode": "rerun-agent",
+          "started_at": 1788790961.9047027,
+          "base_head": "81c8e065e841c302805ca3c1aa4958ea7d27bc96",
+          "context_hash": "d1aa2b9e5bbe5b44db5a20b99374f0960aad78ff9b548c96f583d8090c952ab4",
+          "process": {
+            "pid": 9912,
+            "started_at": 1788790963.374649,
+            "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe",
+            "cwd": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.demo\\release-fail5\\state\\worktrees\\8978c8c95c6b4e5bb1a121941630c7f2",
+            "ended_at": 1788790963.5435693,
+            "exit_code": 0,
+            "outcome": "EXITED",
+            "tree_termination": "CONFIRMED_JOB_EMPTY"
+          },
+          "outcome": "FAILED",
+          "reason": "VERIFICATION_FAILED",
+          "failed_phase": "verify"
+        },
+        {
+          "id": "5b290b7a22214e158734b01363c12639",
+          "mode": "verify-only",
+          "started_at": 1788791109.6912825,
+          "base_head": "81c8e065e841c302805ca3c1aa4958ea7d27bc96",
+          "input_tree": "9727b31a747b7053437e7f0fa90b2359e86585cc78554c398bd9a70e20409a61",
+          "verified_tree": "9727b31a747b7053437e7f0fa90b2359e86585cc78554c398bd9a70e20409a61",
+          "git_tree": "90d4714ac921d194c183e6ffcc2f09afbc7e68d9",
+          "commit": "c7f93539502a1f28b3dc6dde2a71083368d41294",
+          "outcome": "ACCEPTED"
+        }
+      ],
+      "mode": "verify-only",
+      "reason": "VERIFICATION_FAILED",
+      "failed_phase": "verify"
+    },
+    "6": {
+      "status": "ACCEPTED",
+      "next": "IN_PROGRESS",
+      "attempts": [
+        {
+          "id": "ba86b1f4a672415bbfdb4bd751918d1a",
+          "mode": "rerun-agent",
+          "started_at": 1788791145.584688,
+          "base_head": "c7f93539502a1f28b3dc6dde2a71083368d41294",
+          "context_hash": "61851d0736e0e0d05781b1b3ec0d33e7b4a185d84b780e159b592e1b4ef98545",
+          "process": {
+            "pid": 15220,
+            "started_at": 1788791146.9806051,
+            "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe",
+            "cwd": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.demo\\release-fail5\\state\\worktrees\\8978c8c95c6b4e5bb1a121941630c7f2",
+            "ended_at": 1788791147.1146533,
+            "exit_code": 0,
+            "outcome": "EXITED",
+            "tree_termination": "CONFIRMED_JOB_EMPTY"
+          },
+          "verified_tree": "a05ff34b5bbe1e4e2e2f46429021e30516e98dddfa51c6014477a6dc7ca58061",
+          "git_tree": "bc90411ff5bdd67386b03bbc983fd5c471f4b862",
+          "commit": "4613f4a269758902ede434b117cf61cb02da4448",
+          "outcome": "ACCEPTED"
+        }
+      ],
+      "mode": "rerun-agent"
+    },
+    "7": {
+      "status": "ACCEPTED",
+      "next": "IN_PROGRESS",
+      "attempts": [
+        {
+          "id": "4b333bc68c6f4f14bea9a78fc185a86f",
+          "mode": "rerun-agent",
+          "started_at": 1788791154.513262,
+          "base_head": "4613f4a269758902ede434b117cf61cb02da4448",
+          "context_hash": "1b35287db66ff128b6811b55ed80ecd73f333f2306ae5447203041e195a410d0",
+          "process": {
+            "pid": 20488,
+            "started_at": 1788791155.8829494,
+            "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe",
+            "cwd": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.demo\\release-fail5\\state\\worktrees\\8978c8c95c6b4e5bb1a121941630c7f2",
+            "ended_at": 1788791156.0184975,
+            "exit_code": 0,
+            "outcome": "EXITED",
+            "tree_termination": "CONFIRMED_JOB_EMPTY"
+          },
+          "verified_tree": "73fe10699569bc534663a1a2f2045198ffd15835038bc1acc8f24f083bc42cfc",
+          "git_tree": "1453b86aff6df3f02850b1f962563208ffb46bfc",
+          "commit": "05f778cc43b9a39e07ff4cb7ba875dc8343d6eeb",
+          "outcome": "ACCEPTED"
+        }
+      ],
+      "mode": "rerun-agent"
+    },
+    "8": {
+      "status": "ACCEPTED",
+      "next": "IN_PROGRESS",
+      "attempts": [
+        {
+          "id": "f7284c814e90444fa6bffda1bfb46b3d",
+          "mode": "rerun-agent",
+          "started_at": 1788791163.356226,
+          "base_head": "05f778cc43b9a39e07ff4cb7ba875dc8343d6eeb",
+          "context_hash": "6947ed89d83b3b257257243533b44f718ca6ee6e5c85ee1b1846ae833bd81b2b",
+          "process": {
+            "pid": 18492,
+            "started_at": 1788791164.798733,
+            "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe",
+            "cwd": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.demo\\release-fail5\\state\\worktrees\\8978c8c95c6b4e5bb1a121941630c7f2",
+            "ended_at": 1788791164.933504,
+            "exit_code": 0,
+            "outcome": "EXITED",
+            "tree_termination": "CONFIRMED_JOB_EMPTY"
+          },
+          "verified_tree": "3517b0c54d3e4fcd7cdc4eaa578adf58c47f15318a22853580ac8da491c638d2",
+          "git_tree": "578add56f0da13ec058c09bbdf0bb6c45eb6a6df",
+          "commit": "8b0d571f3d85092a8760c4888d7ab04fcdaf7eec",
+          "outcome": "ACCEPTED"
+        }
+      ],
+      "mode": "rerun-agent"
+    },
+    "9": {
+      "status": "ACCEPTED",
+      "next": "IN_PROGRESS",
+      "attempts": [
+        {
+          "id": "03c9971db0d249e8b552b43e33104853",
+          "mode": "rerun-agent",
+          "started_at": 1788791172.3591855,
+          "base_head": "8b0d571f3d85092a8760c4888d7ab04fcdaf7eec",
+          "context_hash": "3f9ce21573c28aaaed8a31603289ea92adc8d406985d2cb0133bb377b3ec73ee",
+          "process": {
+            "pid": 17052,
+            "started_at": 1788791173.7562845,
+            "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe",
+            "cwd": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.demo\\release-fail5\\state\\worktrees\\8978c8c95c6b4e5bb1a121941630c7f2",
+            "ended_at": 1788791173.88944,
+            "exit_code": 0,
+            "outcome": "EXITED",
+            "tree_termination": "CONFIRMED_JOB_EMPTY"
+          },
+          "verified_tree": "fa862a01e807d19c6ddfccb2c3b2e8a38b68e623edc0eb90b8a29f421b34ced4",
+          "git_tree": "ce39fcb454d220878e5e546e1667bc8c5090f271",
+          "commit": "7145724c06aac169d87a61ebca5d8f0c44f5dda7",
+          "outcome": "ACCEPTED"
+        }
+      ],
+      "mode": "rerun-agent"
+    },
+    "10": {
+      "status": "ACCEPTED",
+      "next": "IN_PROGRESS",
+      "attempts": [
+        {
+          "id": "69286cfc52944973a1cf72a2b22cb56b",
+          "mode": "rerun-agent",
+          "started_at": 1788791181.1873205,
+          "base_head": "7145724c06aac169d87a61ebca5d8f0c44f5dda7",
+          "context_hash": "3d553dc441c38f918fa12f620e2ab052f55880fcd6b2edd1e2ad3130ba94260b",
+          "process": {
+            "pid": 7924,
+            "started_at": 1788791182.620838,
+            "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe",
+            "cwd": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.demo\\release-fail5\\state\\worktrees\\8978c8c95c6b4e5bb1a121941630c7f2",
+            "ended_at": 1788791182.7579305,
+            "exit_code": 0,
+            "outcome": "EXITED",
+            "tree_termination": "CONFIRMED_JOB_EMPTY"
+          },
+          "verified_tree": "a18c456561ceac90ec5092fa9168a837d731d9f45c09d23b2aa909811748966b",
+          "git_tree": "05876d85715c5fef185836f8cf07bc5b8db6f252",
+          "commit": "e0fab1c4ddf09c992331916035ee065939ce6a4f",
+          "outcome": "ACCEPTED"
+        }
+      ],
+      "mode": "rerun-agent"
+    }
+  }
+}

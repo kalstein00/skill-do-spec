@@ -1,0 +1,66 @@
+test_closed_is_success_without_external_checks_or_runtime_commit (test_issue_completion.IssueCompletionTests.test_closed_is_success_without_external_checks_or_runtime_commit) ... ERROR
+test_invalid_tracker_state_fails_closed (test_issue_completion.IssueCompletionTests.test_invalid_tracker_state_fails_closed) ... ERROR
+test_no_open_is_successful_empty_queue (test_issue_completion.IssueCompletionTests.test_no_open_is_successful_empty_queue) ... ERROR
+test_queue_only_open_and_closed_dependencies_are_satisfied (test_issue_completion.IssueCompletionTests.test_queue_only_open_and_closed_dependencies_are_satisfied) ... ERROR
+test_real_dagu_open_five_stops_then_closed_verify_only (test_issue_completion.IssueCompletionTests.test_real_dagu_open_five_stops_then_closed_verify_only) ... ERROR
+
+======================================================================
+ERROR: test_closed_is_success_without_external_checks_or_runtime_commit (test_issue_completion.IssueCompletionTests.test_closed_is_success_without_external_checks_or_runtime_commit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\hj0712.jo\vscode\skill-do-spec\tests\test_issue_completion.py", line 51, in test_closed_is_success_without_external_checks_or_runtime_commit
+    root = runtime.start(runtime.make_plan(p))
+                         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hj0712.jo\vscode\skill-do-spec\src\do_spec\runtime.py", line 49, in make_plan
+    p, c = config(project)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\hj0712.jo\vscode\skill-do-spec\src\do_spec\runtime.py", line 28, in config
+    raise Fault("VERIFICATION_REQUIRED", code=2)
+do_spec.core.Fault: VERIFICATION_REQUIRED: 
+
+======================================================================
+ERROR: test_invalid_tracker_state_fails_closed (test_issue_completion.IssueCompletionTests.test_invalid_tracker_state_fails_closed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\hj0712.jo\vscode\skill-do-spec\tests\test_issue_completion.py", line 64, in test_invalid_tracker_state_fails_closed
+    db = read(c['tracker']['state_file'])
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'state_file'
+
+======================================================================
+ERROR: test_no_open_is_successful_empty_queue (test_issue_completion.IssueCompletionTests.test_no_open_is_successful_empty_queue)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\hj0712.jo\vscode\skill-do-spec\tests\test_issue_completion.py", line 37, in test_no_open_is_successful_empty_queue
+    self.close(p, *range(1, 11))
+  File "C:\Users\hj0712.jo\vscode\skill-do-spec\tests\test_issue_completion.py", line 18, in close
+    path = read(project)['tracker']['state_file']
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'state_file'
+
+======================================================================
+ERROR: test_queue_only_open_and_closed_dependencies_are_satisfied (test_issue_completion.IssueCompletionTests.test_queue_only_open_and_closed_dependencies_are_satisfied)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\hj0712.jo\vscode\skill-do-spec\tests\test_issue_completion.py", line 27, in test_queue_only_open_and_closed_dependencies_are_satisfied
+    self.close(p, 1, 2, 3, 4)
+  File "C:\Users\hj0712.jo\vscode\skill-do-spec\tests\test_issue_completion.py", line 18, in close
+    path = read(project)['tracker']['state_file']
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'state_file'
+
+======================================================================
+ERROR: test_real_dagu_open_five_stops_then_closed_verify_only (test_issue_completion.IssueCompletionTests.test_real_dagu_open_five_stops_then_closed_verify_only)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\hj0712.jo\vscode\skill-do-spec\tests\test_issue_completion.py", line 73, in test_real_dagu_open_five_stops_then_closed_verify_only
+    self.close(p, 1, 2)
+  File "C:\Users\hj0712.jo\vscode\skill-do-spec\tests\test_issue_completion.py", line 18, in close
+    path = read(project)['tracker']['state_file']
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'state_file'
+
+----------------------------------------------------------------------
+Ran 5 tests in 3.003s
+
+FAILED (errors=5)

@@ -1,0 +1,8 @@
+.tools/
+.venv/
+.demo/
+__pycache__/
+*.egg-info/
+build/
+dist/
+.pytest_cache/

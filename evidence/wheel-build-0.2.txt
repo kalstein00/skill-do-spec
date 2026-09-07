@@ -1,0 +1,9 @@
+Processing .\.
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: do-spec
+  Building wheel for do-spec (pyproject.toml): started
+  Building wheel for do-spec (pyproject.toml): finished with status 'done'
+  Created wheel for do-spec: filename=do_spec-0.2.0-py3-none-any.whl size=26322 sha256=1c075a657c2987db688a6fc4ee6e08f37c4031c518ad9681154251d25ab8f739
+  Stored in directory: C:\Users\hj0712.jo\AppData\Local\Temp\pip-ephem-wheel-cache-t118z84q\wheels\0a\65\99\63ea7ab3ab9d3c70fa162a0388d403dfe3c1c7e6863f07852e
+Successfully built do-spec

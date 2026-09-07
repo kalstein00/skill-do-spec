@@ -1,0 +1,5 @@
+external verification: passed
+
+{"phase": "verify", "check": "fixture-acceptance", "pid": 15500, "started_at": 1788790924.3637605, "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.demo\\release-fail5\\state\\worktrees\\8978c8c95c6b4e5bb1a121941630c7f2", "ended_at": 1788790924.4999275, "exit_code": 0, "outcome": "EXITED", "tree_termination": "CONFIRMED_JOB_EMPTY"}
+{"run": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.demo\\release-fail5\\state\\runs\\8978c8c95c6b4e5bb1a121941630c7f2", "status": "FAILED", "reason": "VERIFICATION_FAILED"}
+{"error": "VERIFICATION_FAILED: C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.demo\\release-fail5\\state\\runs\\8978c8c95c6b4e5bb1a121941630c7f2", "exit_code": 11}

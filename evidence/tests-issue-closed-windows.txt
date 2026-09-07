@@ -1,0 +1,94 @@
+external verification: passed
+
+{"phase": "verify", "check": "fixture-acceptance", "pid": 14020, "started_at": 1788793839.3010137, "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmpgxgvv5_g\\state\\worktrees\\bbcc830ec4c94fc89b6f053ce4751ed0", "ended_at": 1788793839.4061592, "exit_code": 0, "outcome": "EXITED", "tree_termination": "CONFIRMED_JOB_EMPTY"}
+{"ticket": "1", "phase": "prepare", "attempt": "094c81ffc4b0476ba64863b1027ff5d7"}
+{"ticket": "1", "phase": "agent", "attempt": "094c81ffc4b0476ba64863b1027ff5d7"}
+fake agent ticket 1: process completed (external verification still required)
+
+{"ticket": "1", "phase": "verify", "attempt": "094c81ffc4b0476ba64863b1027ff5d7"}
+external verification: passed
+
+{"phase": "verify", "check": "fixture-acceptance", "pid": 1536, "started_at": 1788793841.285864, "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmpgxgvv5_g\\state\\worktrees\\bbcc830ec4c94fc89b6f053ce4751ed0", "ended_at": 1788793841.4204886, "exit_code": 0, "outcome": "EXITED", "tree_termination": "CONFIRMED_JOB_EMPTY"}
+{"ticket": "1", "phase": "checkpoint", "attempt": "094c81ffc4b0476ba64863b1027ff5d7"}
+test_change_after_verification_is_not_committed (test_boundaries.BoundaryTests.test_change_after_verification_is_not_committed) ... ok
+external verification: passed
+
+{"phase": "verify", "check": "fixture-acceptance", "pid": 8712, "started_at": 1788793843.9487782, "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmpkaf4ark9\\state\\worktrees\\17f97090c43f4a0ca5e954f36b554de7", "ended_at": 1788793844.0519242, "exit_code": 0, "outcome": "EXITED", "tree_termination": "CONFIRMED_JOB_EMPTY"}
+{"ticket": "1", "phase": "prepare", "attempt": "615a54ae9592478789e6278685baddd6"}
+{"ticket": "1", "phase": "agent", "attempt": "615a54ae9592478789e6278685baddd6"}
+fake agent ticket 1: process completed (external verification still required)
+
+{"ticket": "1", "phase": "verify", "attempt": "615a54ae9592478789e6278685baddd6"}
+external verification: passed
+
+{"phase": "verify", "check": "fixture-acceptance", "pid": 10828, "started_at": 1788793845.8686724, "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmpkaf4ark9\\state\\worktrees\\17f97090c43f4a0ca5e954f36b554de7", "ended_at": 1788793845.9752958, "exit_code": 0, "outcome": "EXITED", "tree_termination": "CONFIRMED_JOB_EMPTY"}
+{"ticket": "1", "phase": "checkpoint", "attempt": "615a54ae9592478789e6278685baddd6"}
+test_commit_then_crash_reconciles_exact_intent_without_new_commit (test_boundaries.BoundaryTests.test_commit_then_crash_reconciles_exact_intent_without_new_commit) ... ok
+external verification: passed
+
+{"phase": "verify", "check": "fixture-acceptance", "pid": 13648, "started_at": 1788793849.5756614, "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmp0bw6dwkb\\state\\worktrees\\64887a8b7434492da9e9ad1d9cfc9db4", "ended_at": 1788793849.7080464, "exit_code": 0, "outcome": "EXITED", "tree_termination": "CONFIRMED_JOB_EMPTY"}
+test_plan_drift_and_path_escape_are_rejected (test_boundaries.BoundaryTests.test_plan_drift_and_path_escape_are_rejected) ... ok
+external verification: passed
+
+{"phase": "verify", "check": "fixture-acceptance", "pid": 20488, "started_at": 1788793851.6915107, "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmpoxl2qaf9\\state\\worktrees\\48f5db7a86864e20be9deca2c096e498", "ended_at": 1788793851.7956333, "exit_code": 0, "outcome": "EXITED", "tree_termination": "CONFIRMED_JOB_EMPTY"}
+{"ticket": "1", "phase": "prepare", "attempt": "eee836b06ab446369fcd870353ed918f"}
+{"ticket": "1", "phase": "agent", "attempt": "eee836b06ab446369fcd870353ed918f"}
+fake agent ticket 1: process completed (external verification still required)
+
+{"ticket": "1", "phase": "verify", "attempt": "eee836b06ab446369fcd870353ed918f"}
+test_protected_verifier_change_fails_before_checkpoint (test_boundaries.BoundaryTests.test_protected_verifier_change_fails_before_checkpoint) ... ok
+external verification: passed
+
+{"phase": "verify", "check": "fixture-acceptance", "pid": 21776, "started_at": 1788793855.2599227, "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmpxweth4j1\\state\\worktrees\\8d90c9f698c048ffb576302210d39e34", "ended_at": 1788793855.3940783, "exit_code": 0, "outcome": "EXITED", "tree_termination": "CONFIRMED_JOB_EMPTY"}
+{"ticket": "1", "phase": "prepare", "attempt": "272e286c4957436496004db0b29b6b19"}
+{"ticket": "1", "phase": "agent", "attempt": "272e286c4957436496004db0b29b6b19"}
+fake agent ticket 1: process completed (external verification still required)
+
+test_raw_retry_cannot_reenter_agent (test_boundaries.BoundaryTests.test_raw_retry_cannot_reenter_agent) ... ok
+external verification: passed
+
+{"phase": "verify", "check": "fixture-acceptance", "pid": 18616, "started_at": 1788793858.6059492, "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmptaw5r4rs\\state\\worktrees\\7f854de2a0424c24a027d1240082d6ce", "ended_at": 1788793858.7069216, "exit_code": 0, "outcome": "EXITED", "tree_termination": "CONFIRMED_JOB_EMPTY"}
+{"ticket": "1", "phase": "prepare", "attempt": "392e5c975ef3468a89dbee22fa622d35"}
+{"ticket": "1", "phase": "agent", "attempt": "392e5c975ef3468a89dbee22fa622d35"}
+fake agent ticket 1: process completed (external verification still required)
+
+{"ticket": "1", "phase": "verify", "attempt": "392e5c975ef3468a89dbee22fa622d35"}
+test_unexpected_agent_commit_is_preserved (test_boundaries.BoundaryTests.test_unexpected_agent_commit_is_preserved) ... ok
+test_both_tracker_adapters_select_spec_open_members (test_issue_completion.IssueCompletionTests.test_both_tracker_adapters_select_spec_open_members) ... ok
+{"ticket": "1", "phase": "prepare", "attempt": "cacb3496ba6840369b2e89a2bce5f709"}
+{"ticket": "1", "phase": "agent", "attempt": "cacb3496ba6840369b2e89a2bce5f709"}
+fake agent ticket 1: process completed (tracker closed check still required)
+
+{"ticket": "1", "phase": "verify", "attempt": "cacb3496ba6840369b2e89a2bce5f709"}
+{"ticket": "1", "phase": "report", "attempt": "cacb3496ba6840369b2e89a2bce5f709"}
+{"ticket": "1", "phase": "accept", "attempt": "cacb3496ba6840369b2e89a2bce5f709"}
+test_closed_is_success_without_external_checks_or_runtime_commit (test_issue_completion.IssueCompletionTests.test_closed_is_success_without_external_checks_or_runtime_commit) ... ok
+test_invalid_tracker_state_fails_closed (test_issue_completion.IssueCompletionTests.test_invalid_tracker_state_fails_closed) ... ok
+test_no_open_is_successful_empty_queue (test_issue_completion.IssueCompletionTests.test_no_open_is_successful_empty_queue) ... ok
+test_queue_only_open_and_closed_dependencies_are_satisfied (test_issue_completion.IssueCompletionTests.test_queue_only_open_and_closed_dependencies_are_satisfied) ... ok
+{"run": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\closed-queue gi1vnt2l\\state\\runs\\044f952a9f4c4ff7a61063978e89a843", "status": "FAILED", "reason": "ISSUE_STILL_OPEN"}
+test_real_dagu_open_five_stops_then_closed_verify_only (test_issue_completion.IssueCompletionTests.test_real_dagu_open_five_stops_then_closed_verify_only) ... ok
+test_cycles_missing_duplicate_empty_rejected (test_planner.PlannerTests.test_cycles_missing_duplicate_empty_rejected) ... ok
+test_dependencies_override_numbers_and_stable_ties (test_planner.PlannerTests.test_dependencies_override_numbers_and_stable_ties) ... ok
+test_only_explicit_sections_are_relations (test_planner.PlannerTests.test_only_explicit_sections_are_relations) ... ok
+test_parent_conflict_rejected (test_planner.PlannerTests.test_parent_conflict_rejected) ... ok
+test_os_lock_excludes_second_process (test_process.ProcessTests.test_os_lock_excludes_second_process) ... ok
+test_supervisor_crash_closes_job (test_process.ProcessTests.test_supervisor_crash_closes_job) ... ok
+test_timeout_kills_descendant (test_process.ProcessTests.test_timeout_kills_descendant) ... ok
+test_tracker_environment_case_insensitive (test_process.ProcessTests.test_tracker_environment_case_insensitive) ... ok
+test_unicode_large_input_and_two_streams (test_process.ProcessTests.test_unicode_large_input_and_two_streams) ... ok
+test_unverified_shell_launcher_blocked (test_process.ProcessTests.test_unverified_shell_launcher_blocked) ... ok
+external verification: passed
+
+{"phase": "verify", "check": "fixture-acceptance", "pid": 23544, "started_at": 1788793949.4807167, "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec \ud55c\uae00 space s47selp4\\state\\worktrees\\143f7faedaf743b6bd2560c113e3a2f5", "ended_at": 1788793949.5843208, "exit_code": 0, "outcome": "EXITED", "tree_termination": "CONFIRMED_JOB_EMPTY"}
+{"run": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec \ud55c\uae00 space s47selp4\\state\\runs\\143f7faedaf743b6bd2560c113e3a2f5", "status": "FAILED", "reason": "VERIFICATION_FAILED"}
+test_failure_five_preserved_and_verify_only_resume (test_runtime.RuntimeTests.test_failure_five_preserved_and_verify_only_resume) ... ok
+test_both_providers_complete_three_pages_and_full_body (test_tracker.TrackerTests.test_both_providers_complete_three_pages_and_full_body) ... ok
+test_both_saved_comment_timeout_reconcile_without_duplicate (test_tracker.TrackerTests.test_both_saved_comment_timeout_reconcile_without_duplicate) ... ok
+test_keys_include_provider_port_prefix_and_writes_require_approval (test_tracker.TrackerTests.test_keys_include_provider_port_prefix_and_writes_require_approval) ... ok
+test_partial_and_login_mismatch_and_hang_fail_closed (test_tracker.TrackerTests.test_partial_and_login_mismatch_and_hang_fail_closed) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 237.063s
+
+OK

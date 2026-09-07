@@ -1,0 +1,26 @@
+NAME:
+   tea logins - Log in to a Gitea server
+
+USAGE:
+   tea logins [command [command options]] [<login name>]
+
+CATEGORY:
+   SETUP
+
+DESCRIPTION:
+   Log in to a Gitea server
+
+COMMANDS:
+   list, ls                List Gitea logins
+   add                     Add a Gitea login
+   edit, e                 Edit Gitea logins
+   delete, rm              Remove a Gitea login
+   default                 Get or Set Default Login
+   helper, git-credential  Act as a git credential helper for stored Gitea logins
+   oauth-refresh           Refresh an OAuth token
+
+OPTIONS:
+   --help, -h  show help
+
+GLOBAL OPTIONS:
+   --debug, --vvv  Enable debug mode

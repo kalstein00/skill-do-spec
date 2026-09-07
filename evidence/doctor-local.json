@@ -1,0 +1,18 @@
+{
+  "os": "Windows-11-10.0.26100-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe",
+  "tools": {
+    "git": {
+      "path": "C:\\Program Files\\Git\\cmd\\git.EXE",
+      "status": "UNVERIFIED",
+      "version": "git version 2.55.0.windows.5"
+    }
+  },
+  "configuration": "SUPPORTED_LOCAL_CONTRACT",
+  "dagu": {
+    "path": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.tools\\dagu.exe",
+    "version": "2.11.2",
+    "status": "SUPPORTED_VERSION"
+  }
+}

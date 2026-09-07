@@ -1,0 +1,39 @@
+test_both_tracker_adapters_select_spec_open_members (test_issue_completion.IssueCompletionTests.test_both_tracker_adapters_select_spec_open_members) ... ok
+{"ticket": "1", "phase": "prepare", "attempt": "3a49a0fb936947ffafdd4ddd1d2efbb6"}
+{"ticket": "1", "phase": "agent", "attempt": "3a49a0fb936947ffafdd4ddd1d2efbb6"}
+{"ticket": "1", "phase": "verify", "attempt": "3a49a0fb936947ffafdd4ddd1d2efbb6"}
+{"ticket": "1", "phase": "report", "attempt": "3a49a0fb936947ffafdd4ddd1d2efbb6"}
+{"ticket": "1", "phase": "accept", "attempt": "3a49a0fb936947ffafdd4ddd1d2efbb6"}
+test_closed_between_prepare_and_agent_is_not_executed (test_issue_completion.IssueCompletionTests.test_closed_between_prepare_and_agent_is_not_executed) ... ok
+{"ticket": "1", "phase": "prepare", "attempt": "e21af9b546ee42ef8c2705bd71ae326e"}
+{"ticket": "1", "phase": "agent", "attempt": "e21af9b546ee42ef8c2705bd71ae326e"}
+fake agent ticket 1: process completed (tracker closed check still required)
+
+{"ticket": "1", "phase": "verify", "attempt": "e21af9b546ee42ef8c2705bd71ae326e"}
+{"ticket": "1", "phase": "report", "attempt": "e21af9b546ee42ef8c2705bd71ae326e"}
+{"ticket": "1", "phase": "accept", "attempt": "e21af9b546ee42ef8c2705bd71ae326e"}
+test_closed_is_success_without_external_checks_or_runtime_commit (test_issue_completion.IssueCompletionTests.test_closed_is_success_without_external_checks_or_runtime_commit) ... ok
+test_invalid_tracker_state_fails_closed (test_issue_completion.IssueCompletionTests.test_invalid_tracker_state_fails_closed) ... ok
+{"ticket": "1", "phase": "prepare", "attempt": "e9c3ea669d5748df8a8de9ad3bd0d7cf"}
+{"ticket": "1", "phase": "agent", "attempt": "e9c3ea669d5748df8a8de9ad3bd0d7cf"}
+fake agent ticket 1: process completed (tracker closed check still required)
+
+{"ticket": "1", "phase": "verify", "attempt": "e9c3ea669d5748df8a8de9ad3bd0d7cf"}
+test_lookup_failure_after_worker_is_not_completion (test_issue_completion.IssueCompletionTests.test_lookup_failure_after_worker_is_not_completion) ... ok
+test_no_open_is_successful_empty_queue (test_issue_completion.IssueCompletionTests.test_no_open_is_successful_empty_queue) ... ok
+{"ticket": "1", "phase": "prepare", "attempt": "0f4071e0908a4767a48c370e9461fbe0"}
+{"ticket": "1", "phase": "agent", "attempt": "0f4071e0908a4767a48c370e9461fbe0"}
+{"ticket": "1", "phase": "verify", "attempt": "0f4071e0908a4767a48c370e9461fbe0"}
+{"ticket": "1", "phase": "report", "attempt": "0f4071e0908a4767a48c370e9461fbe0"}
+{"ticket": "1", "phase": "accept", "attempt": "0f4071e0908a4767a48c370e9461fbe0"}
+test_nonzero_exit_does_not_override_closed_signal (test_issue_completion.IssueCompletionTests.test_nonzero_exit_does_not_override_closed_signal) ... ok
+test_queue_only_open_and_closed_dependencies_are_satisfied (test_issue_completion.IssueCompletionTests.test_queue_only_open_and_closed_dependencies_are_satisfied) ... ok
+{"run": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\closed-queue slgfwkp_\\state\\runs\\bd8dd311dacb4b168a75f6b587fdecd9", "status": "FAILED", "reason": "ISSUE_STILL_OPEN"}
+test_real_dagu_open_five_stops_then_closed_verify_only (test_issue_completion.IssueCompletionTests.test_real_dagu_open_five_stops_then_closed_verify_only) ... ok
+{"ticket": "2", "phase": "prepare", "attempt": "ecb702abd0cd479b959deef0ade7cead"}
+test_reopened_excluded_blocker_stops_before_agent (test_issue_completion.IssueCompletionTests.test_reopened_excluded_blocker_stops_before_agent) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 95.518s
+
+OK

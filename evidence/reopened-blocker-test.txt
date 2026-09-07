@@ -1,0 +1,7 @@
+{"ticket": "2", "phase": "prepare", "attempt": "833ce7eee4814ca08ea1bb966439f3bd"}
+test_reopened_excluded_blocker_stops_before_agent (test_issue_completion.IssueCompletionTests.test_reopened_excluded_blocker_stops_before_agent) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 1.971s
+
+OK

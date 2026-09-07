@@ -1,0 +1,10 @@
+
+Algorithm : SHA256
+Hash      : A976D6424121C871AD8623161D53BB2E0D63DDD1D472C8737EDFD2D87290EA78
+Path      : C:\Users\hj0712.jo\vscode\skill-do-spec\dist\do-spec-skill.zip
+
+Algorithm : SHA256
+Hash      : 66E947CEE08827F246D071E84FD8AB57E0E1060CE984269AA0B34D55844D3876
+Path      : C:\Users\hj0712.jo\vscode\skill-do-spec\dist\do_spec-0.2.0-py3-none-any.whl
+
+

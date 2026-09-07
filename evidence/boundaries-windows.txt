@@ -1,0 +1,43 @@
+{"phase": "verify", "check": "fixture-acceptance", "pid": 16188, "started_at": 1788790188.8315494, "argv_executable": "C:\\Users\\hj0712.jo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmpmaqjx3c1\\state\\worktrees\\a86aaba741d640eca8735b4c7c57044d", "ended_at": 1788790188.9376614, "exit_code": 0, "outcome": "EXITED"}
+external verification: passed
+{"ticket": "1", "phase": "prepare", "attempt": "bdf2f4c0af80456cac86627331cd2a8d"}
+{"ticket": "1", "phase": "agent", "attempt": "bdf2f4c0af80456cac86627331cd2a8d"}
+{"ticket": "1", "phase": "verify", "attempt": "bdf2f4c0af80456cac86627331cd2a8d"}
+{"phase": "verify", "check": "fixture-acceptance", "pid": 16368, "started_at": 1788790190.3111496, "argv_executable": "C:\\Users\\hj0712.jo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmpmaqjx3c1\\state\\worktrees\\a86aaba741d640eca8735b4c7c57044d", "ended_at": 1788790190.4127505, "exit_code": 0, "outcome": "EXITED"}
+external verification: passed
+{"ticket": "1", "phase": "checkpoint", "attempt": "bdf2f4c0af80456cac86627331cd2a8d"}
+test_change_after_verification_is_not_committed (test_boundaries.BoundaryTests.test_change_after_verification_is_not_committed) ... ok
+{"phase": "verify", "check": "fixture-acceptance", "pid": 18008, "started_at": 1788790192.4623556, "argv_executable": "C:\\Users\\hj0712.jo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmpuq1_2oni\\state\\worktrees\\4140e6a7e252486cb26a641cc5d0abc7", "ended_at": 1788790192.5645115, "exit_code": 0, "outcome": "EXITED"}
+external verification: passed
+{"ticket": "1", "phase": "prepare", "attempt": "86dbecd6df144a4bafb56b6d573da914"}
+{"ticket": "1", "phase": "agent", "attempt": "86dbecd6df144a4bafb56b6d573da914"}
+{"ticket": "1", "phase": "verify", "attempt": "86dbecd6df144a4bafb56b6d573da914"}
+{"phase": "verify", "check": "fixture-acceptance", "pid": 19524, "started_at": 1788790193.871272, "argv_executable": "C:\\Users\\hj0712.jo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmpuq1_2oni\\state\\worktrees\\4140e6a7e252486cb26a641cc5d0abc7", "ended_at": 1788790193.9493442, "exit_code": 0, "outcome": "EXITED"}
+external verification: passed
+{"ticket": "1", "phase": "checkpoint", "attempt": "86dbecd6df144a4bafb56b6d573da914"}
+test_commit_then_crash_reconciles_exact_intent_without_new_commit (test_boundaries.BoundaryTests.test_commit_then_crash_reconciles_exact_intent_without_new_commit) ... ok
+{"phase": "verify", "check": "fixture-acceptance", "pid": 11396, "started_at": 1788790197.2632203, "argv_executable": "C:\\Users\\hj0712.jo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmp7movzr6x\\state\\worktrees\\99d0a8f7d01043e8ad8a2303fb43988a", "ended_at": 1788790197.3658118, "exit_code": 0, "outcome": "EXITED"}
+external verification: passed
+test_plan_drift_and_path_escape_are_rejected (test_boundaries.BoundaryTests.test_plan_drift_and_path_escape_are_rejected) ... ok
+{"phase": "verify", "check": "fixture-acceptance", "pid": 10680, "started_at": 1788790199.045425, "argv_executable": "C:\\Users\\hj0712.jo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmp3rjqfbx5\\state\\worktrees\\d4893b5cb8b7499ab8e9c694dfc50310", "ended_at": 1788790199.1480508, "exit_code": 0, "outcome": "EXITED"}
+external verification: passed
+{"ticket": "1", "phase": "prepare", "attempt": "3182c1328c024e9296be13989709c8be"}
+{"ticket": "1", "phase": "agent", "attempt": "3182c1328c024e9296be13989709c8be"}
+{"ticket": "1", "phase": "verify", "attempt": "3182c1328c024e9296be13989709c8be"}
+test_protected_verifier_change_fails_before_checkpoint (test_boundaries.BoundaryTests.test_protected_verifier_change_fails_before_checkpoint) ... ok
+{"phase": "verify", "check": "fixture-acceptance", "pid": 9412, "started_at": 1788790202.0450988, "argv_executable": "C:\\Users\\hj0712.jo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmpvec12i5x\\state\\worktrees\\3ca74a4cdee74e99a7979f7173788805", "ended_at": 1788790202.1502287, "exit_code": 0, "outcome": "EXITED"}
+external verification: passed
+{"ticket": "1", "phase": "prepare", "attempt": "5d8bdba945d14dd3848ed6a55abbb1ec"}
+{"ticket": "1", "phase": "agent", "attempt": "5d8bdba945d14dd3848ed6a55abbb1ec"}
+test_raw_retry_cannot_reenter_agent (test_boundaries.BoundaryTests.test_raw_retry_cannot_reenter_agent) ... ok
+{"phase": "verify", "check": "fixture-acceptance", "pid": 1064, "started_at": 1788790204.4620328, "argv_executable": "C:\\Users\\hj0712.jo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmp8weut7tl\\state\\worktrees\\f808011f910e4abc8db9bc5865ac16cd", "ended_at": 1788790204.5641766, "exit_code": 0, "outcome": "EXITED"}
+external verification: passed
+{"ticket": "1", "phase": "prepare", "attempt": "5df63ca6ac3245fa9ba999e952a5b473"}
+{"ticket": "1", "phase": "agent", "attempt": "5df63ca6ac3245fa9ba999e952a5b473"}
+{"ticket": "1", "phase": "verify", "attempt": "5df63ca6ac3245fa9ba999e952a5b473"}
+test_unexpected_agent_commit_is_preserved (test_boundaries.BoundaryTests.test_unexpected_agent_commit_is_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 18.609s
+
+OK

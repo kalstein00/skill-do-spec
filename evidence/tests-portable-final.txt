@@ -1,0 +1,11 @@
+test_bundle_contains_exact_runtime (test_portable.PortableTests.test_bundle_contains_exact_runtime) ... ok
+test_copied_skill_runs_without_installed_package (test_portable.PortableTests.test_copied_skill_runs_without_installed_package) ... ok
+test_explicit_version_failure_never_falls_back_to_download (test_portable.PortableTests.test_explicit_version_failure_never_falls_back_to_download) ... ok
+test_hash_mismatch_never_installs_or_executes (test_portable.PortableTests.test_hash_mismatch_never_installs_or_executes) ... ok
+test_monitoring_does_not_claim_server_is_running (test_portable.PortableTests.test_monitoring_does_not_claim_server_is_running) ... ok
+test_monitoring_remembers_project_port_and_preserves_unicode (test_portable.PortableTests.test_monitoring_remembers_project_port_and_preserves_unicode) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.330s
+
+OK

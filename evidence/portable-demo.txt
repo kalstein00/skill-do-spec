@@ -1,0 +1,3 @@
+{"monitoring_url": "http://127.0.0.1:8080", "monitoring_status": "start-ui-in-another-terminal", "ui_command_argv": ["uv", "run", "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-copy-fe573ec1\\���� skill\\scripts\\run.py", "ui", "--project", "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-copy-fe573ec1\\demo\\project.json", "--port", "8080"]}
+{"run": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-copy-fe573ec1\\demo\\state\\runs\\cd2ec51e898f4e81ac6e824a0e2dfc84", "status": "FAILED", "reason": "ISSUE_STILL_OPEN"}
+{"error": "ISSUE_STILL_OPEN: C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-copy-fe573ec1\\demo\\state\\runs\\cd2ec51e898f4e81ac6e824a0e2dfc84", "exit_code": 11}
