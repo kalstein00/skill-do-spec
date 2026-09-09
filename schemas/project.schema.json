@@ -16,7 +16,7 @@
     "tracker": {"type": "object", "required": ["kind"], "properties": {"kind": {"enum": ["local", "github", "forgejo"]}, "state_file": {"type": "string"}}},
     "agent": {
       "type": "object", "additionalProperties": false, "required": ["kind", "argv", "timeout"],
-      "properties": {"kind": {"enum": ["fake", "cline"]}, "argv": {"type": "array", "items": {"type": "string"}}, "timeout": {"type": "number", "exclusiveMinimum": 0}}
+      "properties": {"kind": {"enum": ["fake", "cline"]}, "argv": {"type": "array", "items": {"type": "string"}}, "timeout": {"type": "number", "exclusiveMinimum": 0}, "contract": {"const": "cline-3.0.61-local"}, "auto_approve": {"type": "boolean", "default": false}}
     },
     "checks": {
       "type": "array",

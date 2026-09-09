@@ -10,13 +10,15 @@
 
 [변경된 완료 계약](docs/ISSUE-CLOSED.md) · [호환성](COMPATIBILITY.md) · [기존 인수 기록](docs/ACCEPTANCE.md)
 
+[실제 Cline E2E 결과와 재현 방법](docs/REAL-CLINE-E2E.md): Windows x64 Cline 3.0.61 + 동봉 Dagu + 로컬 fake tracker에서 실패 차단·재개를 검증했습니다. 원격 issue나 upstream implement 스킬 자체를 검증한 것은 아닙니다.
+
 ## 설치
 
 **`skills/do-spec` 폴더 전체를 사용하는 에이전트의 skill 위치에 복사하고 스킬을 호출하세요.** 예: “do-spec 스킬로 이 spec의 남은 issue를 진행해줘.”
 
 스킬을 읽은 에이전트가 **스킬 내부의 `scripts/run.py`를 `uv run`으로 실행**합니다. 의존성 준비, 계획 생성, 순차 실행, 상태 조회와 모니터링 웹 시작까지 에이전트가 담당하며 실제 웹 주소를 안내합니다. 사용자가 CLI 명령을 입력하거나 별도 터미널을 여는 절차는 기본 사용 흐름에 없습니다. uv와 Git이 필요하고, 첫 방문의 웹 계정 설정은 사용자가 진행합니다.
 
-실행 코드가 폴더에 포함되어 별도 wheel/pip 설치는 필요 없습니다. Python은 uv가 준비하고 Dagu 2.11.2는 고정 해시를 검사해 사용자 캐시에 준비합니다. 기본 모니터링 주소는 `http://127.0.0.1:8080`이며, 다른 포트를 사용하면 실제 주소를 안내합니다. 실제 Cline/live tracker 미검증 차단은 동일합니다.
+실행 코드가 폴더에 포함되어 별도 wheel/pip 설치는 필요 없습니다. Python은 uv가 준비합니다. 배포 ZIP에는 Windows/Linux x64 Dagu 2.11.2가 `tools/dagu/2.11.2/`에 들어 있으며 실행 전에 해시를 검사합니다. Git에는 대용량 실행 파일을 넣지 않으므로 저장소에서 배포본을 만들 때는 `python scripts/bundle_skill.py --with-dagu`를 실행합니다. 기본 모니터링 주소는 `http://127.0.0.1:8080`이며, 다른 포트를 사용하면 실제 주소를 안내합니다. Windows Cline 3.0.61 + 로컬 tracker 전용 adapter를 추가했습니다. 실제 원격 tracker와 다른 Cline/OS 조합은 계속 미검증입니다.
 
 [스킬 실행 지침](skills/do-spec/SKILL.md) · [에이전트용 내부 명령 참고](skills/do-spec/references/usage.md). 아래는 standalone 도구를 직접 점검하려는 개발자용 선택 사항입니다.
 
@@ -61,7 +63,7 @@ do-spec start --plan <printed-plan-file>
 do-spec ui --project <project.json> --port 18080
 ```
 
-기존 Dagu UI의 builtin 인증을 유지합니다. `pause`는 다음 issue 경계, `stop`은 현재 process tree 종료 요청입니다. raw Retry는 보호 검사를 우회하지 않습니다. **실제 Cline·gh/tea CLI/server 지원은 아직 미검증으로 차단**되며, gh/tea 연결 회귀는 합성 CLI를 사용합니다. 전체 PRD MVP 완료를 의미하지 않습니다.
+기존 Dagu UI의 builtin 인증을 유지합니다. `pause`는 다음 issue 경계, `stop`은 현재 process tree 종료 요청입니다. raw Retry는 보호 검사를 우회하지 않습니다. Cline의 지원 범위는 **Windows 3.0.61 + 로컬 tracker**이며, 원격 gh/tea 연결 회귀는 합성 CLI를 사용합니다. 전체 PRD MVP 완료를 의미하지 않습니다.
 
 ```powershell
 $env:PYTHONPATH='src'

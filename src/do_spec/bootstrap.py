@@ -7,7 +7,7 @@ import shutil
 import tarfile
 import tempfile
 import urllib.request
-from .core import Fault, lock
+from .core import Fault, lock, read
 from .engine import PIN, validate_binary
 
 ARCHIVES = {
@@ -21,12 +21,45 @@ def cache_home():
     return (Path(base) if base else Path.home() / ".cache") / "do-spec" / "tools" / PIN
 
 
+def bundled_home():
+    skill = Path(__file__).resolve().parents[3]
+    if (skill / 'SKILL.md').is_file() and (skill / 'scripts' / 'run.py').is_file():
+        return skill / 'tools' / 'dagu' / PIN
+    return None
+
+
+def bundled_binary():
+    home = bundled_home()
+    system = platform.system()
+    if home is None or system not in ARCHIVES or platform.machine().lower() not in {'amd64', 'x86_64'}:
+        return None
+    flavor = ARCHIVES[system][0]
+    path = home / (flavor + '-amd64') / ('dagu.exe' if system == 'Windows' else 'dagu')
+    if not path.exists():
+        return None
+    manifest = read(home / 'manifest.json')
+    expected = manifest['binaries'][path.relative_to(home).as_posix()]
+    if hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+        raise Fault('DAGU_BUNDLED_HASH_MISMATCH')
+    if system == 'Linux':
+        path.chmod(path.stat().st_mode | 0o100)
+    validate_binary(str(path))
+    return str(path)
+
+
 def resolve(explicit=None):
-    selected = explicit or os.environ.get("DO_SPEC_DAGU") or shutil.which("dagu")
+    selected = explicit or os.environ.get("DO_SPEC_DAGU")
     if selected:
         path = str(Path(selected).resolve())
         validate_binary(path)
         return path
+    bundled = bundled_binary()
+    if bundled:
+        return bundled
+    selected = shutil.which('dagu')
+    if selected:
+        validate_binary(selected)
+        return str(Path(selected).resolve())
     system = platform.system()
     if system not in ARCHIVES or platform.machine().lower() not in {"amd64", "x86_64"}:
         raise Fault("DAGU_PLATFORM_UNVERIFIED", "provide --dagu for a separately verified Dagu 2.11.2 binary")

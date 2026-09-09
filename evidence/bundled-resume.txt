@@ -1,0 +1,2 @@
+{"monitoring_url": "http://127.0.0.1:8080", "monitoring_status": "start-ui-in-another-terminal", "ui_command_argv": ["uv", "run", "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\do-spec\\scripts\\run.py", "ui", "--project", "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\project.json", "--port", "8080"]}
+{"error": "INTERNAL_ERROR: C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\state\\runs\\0f9d23b82bff4f9da6d176aae26ab3a9", "exit_code": 15}

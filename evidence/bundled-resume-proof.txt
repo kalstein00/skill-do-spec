@@ -1,0 +1,2 @@
+Before resume: only 1,2,3,4,5 started
+Final recovery: SUCCEEDED; agents 1..10 each exactly once; already closed ticket 10 skipped

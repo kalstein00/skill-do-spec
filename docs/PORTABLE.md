@@ -1,5 +1,7 @@
 # Portable skill verification
 
+Historical source-only distribution report below. The 2026-09-09 prepared ZIP also contains Windows/Linux Dagu binaries, their licenses and manifest; build with `scripts/bundle_skill.py --with-dagu`. The skill agent now owns the persistent UI tool session instead of asking the user to launch a terminal. Cline's version-scoped local adapter and its current E2E evidence supersede the earlier all-Cline-blocked statement; Linux and remote tracker integration remain unverified.
+
 Commands executed on Windows with Python 3.12.14, uv 0.10.9, Git 2.55.0.windows.5 and actual Dagu 2.11.2:
 
 ```powershell

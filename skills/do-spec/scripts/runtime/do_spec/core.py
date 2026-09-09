@@ -31,7 +31,16 @@ def write(path, value):
             json.dump(value, f, ensure_ascii=False, indent=2)
             f.flush()
             os.fsync(f.fileno())
-        os.replace(tmp, path)
+        # Windows scanners/readers may temporarily deny replacing a closed file.
+        # Retry only this atomic metadata operation, never the agent or ticket.
+        for attempt in range(6):
+            try:
+                os.replace(tmp, path)
+                break
+            except PermissionError as error:
+                if os.name != 'nt' or getattr(error, 'winerror', None) not in {5, 32, 33} or attempt == 5:
+                    raise
+                time.sleep(0.02 * 2**attempt)
     finally:
         if os.path.exists(tmp):
             os.unlink(tmp)

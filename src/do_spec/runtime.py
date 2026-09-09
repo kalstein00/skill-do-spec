@@ -37,15 +37,18 @@ def config(path):
     if c.get("reporting", "local-only") != "local-only":
         raise Fault("REPORT_POLICY_UNVERIFIED", "live mutations disabled until tracker contract certification", 3)
     agent = c["agent"]
-    if set(agent) - {"kind", "argv", "timeout"}:
+    if set(agent) - {"kind", "argv", "timeout", "contract", "auto_approve"}:
         raise Fault("CONFIG_INVALID", "unknown agent fields", 2)
     if agent.get("kind") not in {"fake", "cline"}:
         raise Fault("RUNTIME_UNSUPPORTED", code=2)
     if not agent.get("timeout", 0) > 0:
         raise Fault("AGENT_TIMEOUT_REQUIRED", code=2)
     if agent["kind"] == "cline":
-        raise Fault("CLINE_PROFILE_UNVERIFIED", "no installed Cline contract certified; doctor required")
-    if agent.get("argv", [])[:2] != [sys.executable, str(Path(__file__).with_name("fake_agent.py"))]:
+        if c['tracker']['kind'] != 'local' or c['completion'] != 'issue-closed':
+            raise Fault('CLINE_PROFILE_UNVERIFIED', 'only local issue-state integration is currently supported')
+        from .cline import validate
+        validate(agent)
+    elif agent.get("argv", [])[:2] != [sys.executable, str(Path(__file__).with_name("fake_agent.py"))]:
         raise Fault("FAKE_AGENT_CONTRACT_INVALID", "fake kind accepts only the bundled test double", 2)
     for check in c.get("checks", []):
         if set(check) - {"name", "argv", "timeout"} or not check.get("argv") or check.get("timeout", 0) <= 0:
@@ -98,6 +101,9 @@ def make_plan(project):
             "base_head": g.head(c["repo"]), "common_dir": str(g.common(c["repo"])), "tickets": tickets,
             "snapshots": snapshots, "spec": spec, "tracker": c["tracker"], 'excluded': excluded,
             "dagu_hash": digest(Path(c["dagu"]).read_bytes()), "runtime_hash": runtime_hash()}
+    if c['agent']['kind'] == 'cline':
+        from .cline import tool_files
+        plan['agent_tool_hashes'] = {path: digest(Path(path).read_bytes()) for path in tool_files(c['agent'])}
     plan["hash"] = digest(plan)
     path = Path(c["state_dir"]) / "plans" / (plan["hash"] + ".json")
     if path.exists() and read(path) != plan:
@@ -130,6 +136,9 @@ def check_plan(plan):
     for path, snap in plan["snapshots"].items():
         if not Path(path).exists() or digest(Path(path).read_bytes()) != snap["hash"]:
             raise Fault("PLAN_DRIFT", path)
+    for path, expected in plan.get('agent_tool_hashes', {}).items():
+        if not Path(path).is_file() or digest(Path(path).read_bytes()) != expected:
+            raise Fault('PLAN_DRIFT', 'agent launcher changed')
 
 
 def checks(plan, wt, logs, stop=None):
@@ -309,10 +318,23 @@ def phase(root, tid, phase_name, dispatch):
                     attempt['before_agent_issue'] = observe(plan['tracker'], tid, logs / 'tracker')
                     attempt['skip_agent'] = attempt['before_agent_issue']['state'] == 'closed'
                 if not attempt.get('skip_agent'):
-                    attempt["process"] = run(argv, wt, logs / "agent", agent["timeout"], payload=(logs / "prompt.json").read_bytes(), stop=root / "stop", tee=True)
+                    if agent['kind'] == 'cline':
+                        from .cline import command
+                        argv = command(agent, wt)
+                    attempt["process"] = run(argv, wt, logs / "agent", agent["timeout"], payload=(logs / "prompt.json").read_bytes(), stop=root / "stop", tee=agent['kind'] != 'cline')
                     event(root / "events.jsonl", ticket=tid, event="agent-result", **attempt["process"])
                     if attempt["process"]["outcome"] != "EXITED":
                         raise Fault(attempt["process"]["outcome"], code=12)
+                    if agent['kind'] == 'cline':
+                        from .cline import session
+                        info = session(str(logs / 'agent') + '.stdout.log')
+                        previous = [a.get('session', {}).get('id') for t in state['tickets'].values() for a in t['attempts'] if a is not attempt]
+                        if info['id'] in previous:
+                            raise Fault('CLINE_SESSION_REUSED')
+                        attempt['session'] = info
+                        print(json.dumps({'ticket': tid, 'cline_session': info}), flush=True)
+                        if info['finish_reason'] == 'aborted':
+                            raise Fault('CLINE_APPROVAL_OR_ABORTED', code=12)
                     if not closed_policy and attempt["process"]["exit_code"]:
                         raise Fault("AGENT_FAILED", code=10)
                 if closed_policy:

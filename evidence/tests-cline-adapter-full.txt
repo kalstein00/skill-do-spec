@@ -1,0 +1,127 @@
+test_persistent_denial_is_bounded_and_preserves_previous_state (test_atomic_write.AtomicWriteTests.test_persistent_denial_is_bounded_and_preserves_previous_state) ... ok
+test_transient_denial_retries_only_replace (test_atomic_write.AtomicWriteTests.test_transient_denial_retries_only_replace) ... ok
+external verification: passed
+
+{"phase": "verify", "check": "fixture-acceptance", "pid": 25980, "started_at": 1788956392.9693077, "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmp7trerpbd\\state\\worktrees\\61dbaaecbb494b1ab9d6dfdb35005897", "ended_at": 1788956393.1091104, "exit_code": 0, "outcome": "EXITED", "tree_termination": "CONFIRMED_JOB_EMPTY"}
+{"ticket": "1", "phase": "prepare", "attempt": "b1376713007940f1af1d5ea8f5ba3113"}
+{"ticket": "1", "phase": "agent", "attempt": "b1376713007940f1af1d5ea8f5ba3113"}
+fake agent ticket 1: process completed (external verification still required)
+
+{"ticket": "1", "phase": "verify", "attempt": "b1376713007940f1af1d5ea8f5ba3113"}
+external verification: passed
+
+{"phase": "verify", "check": "fixture-acceptance", "pid": 21920, "started_at": 1788956395.2308283, "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmp7trerpbd\\state\\worktrees\\61dbaaecbb494b1ab9d6dfdb35005897", "ended_at": 1788956395.3680122, "exit_code": 0, "outcome": "EXITED", "tree_termination": "CONFIRMED_JOB_EMPTY"}
+{"ticket": "1", "phase": "checkpoint", "attempt": "b1376713007940f1af1d5ea8f5ba3113"}
+test_change_after_verification_is_not_committed (test_boundaries.BoundaryTests.test_change_after_verification_is_not_committed) ... ok
+external verification: passed
+
+{"phase": "verify", "check": "fixture-acceptance", "pid": 24272, "started_at": 1788956398.4533916, "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmp4b7lbweo\\state\\worktrees\\99696819276248e49665ab925d68ce4d", "ended_at": 1788956398.591977, "exit_code": 0, "outcome": "EXITED", "tree_termination": "CONFIRMED_JOB_EMPTY"}
+{"ticket": "1", "phase": "prepare", "attempt": "a12fef8681184821b05dc0c8190642d5"}
+{"ticket": "1", "phase": "agent", "attempt": "a12fef8681184821b05dc0c8190642d5"}
+fake agent ticket 1: process completed (external verification still required)
+
+{"ticket": "1", "phase": "verify", "attempt": "a12fef8681184821b05dc0c8190642d5"}
+external verification: passed
+
+{"phase": "verify", "check": "fixture-acceptance", "pid": 24060, "started_at": 1788956401.0468428, "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmp4b7lbweo\\state\\worktrees\\99696819276248e49665ab925d68ce4d", "ended_at": 1788956401.1807861, "exit_code": 0, "outcome": "EXITED", "tree_termination": "CONFIRMED_JOB_EMPTY"}
+{"ticket": "1", "phase": "checkpoint", "attempt": "a12fef8681184821b05dc0c8190642d5"}
+test_commit_then_crash_reconciles_exact_intent_without_new_commit (test_boundaries.BoundaryTests.test_commit_then_crash_reconciles_exact_intent_without_new_commit) ... ok
+external verification: passed
+
+{"phase": "verify", "check": "fixture-acceptance", "pid": 1968, "started_at": 1788956405.9975715, "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmpwndtld7u\\state\\worktrees\\103a22faea054ac2a0f7d430cd3425da", "ended_at": 1788956406.135814, "exit_code": 0, "outcome": "EXITED", "tree_termination": "CONFIRMED_JOB_EMPTY"}
+test_plan_drift_and_path_escape_are_rejected (test_boundaries.BoundaryTests.test_plan_drift_and_path_escape_are_rejected) ... ok
+external verification: passed
+
+{"phase": "verify", "check": "fixture-acceptance", "pid": 24344, "started_at": 1788956408.6183403, "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmpvpdi2e67\\state\\worktrees\\95d3a3702fe144f99f896a27c3be89e2", "ended_at": 1788956408.7875357, "exit_code": 0, "outcome": "EXITED", "tree_termination": "CONFIRMED_JOB_EMPTY"}
+{"ticket": "1", "phase": "prepare", "attempt": "9c6523d771b840fe9ab85cf49dd83ccd"}
+{"ticket": "1", "phase": "agent", "attempt": "9c6523d771b840fe9ab85cf49dd83ccd"}
+fake agent ticket 1: process completed (external verification still required)
+
+{"ticket": "1", "phase": "verify", "attempt": "9c6523d771b840fe9ab85cf49dd83ccd"}
+test_protected_verifier_change_fails_before_checkpoint (test_boundaries.BoundaryTests.test_protected_verifier_change_fails_before_checkpoint) ... ok
+external verification: passed
+
+{"phase": "verify", "check": "fixture-acceptance", "pid": 14996, "started_at": 1788956413.3217888, "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmphj04nn8_\\state\\worktrees\\f467da522b004a77bb97540ab5d39127", "ended_at": 1788956413.458429, "exit_code": 0, "outcome": "EXITED", "tree_termination": "CONFIRMED_JOB_EMPTY"}
+{"ticket": "1", "phase": "prepare", "attempt": "bb4b829fcbef4aab8d05f62e6f0c4ccc"}
+{"ticket": "1", "phase": "agent", "attempt": "bb4b829fcbef4aab8d05f62e6f0c4ccc"}
+fake agent ticket 1: process completed (external verification still required)
+
+test_raw_retry_cannot_reenter_agent (test_boundaries.BoundaryTests.test_raw_retry_cannot_reenter_agent) ... ok
+external verification: passed
+
+{"phase": "verify", "check": "fixture-acceptance", "pid": 17316, "started_at": 1788956417.3354821, "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\tmp6coh2ehd\\state\\worktrees\\b558d5c46ece467a9a3e9bb4d771328a", "ended_at": 1788956417.4716048, "exit_code": 0, "outcome": "EXITED", "tree_termination": "CONFIRMED_JOB_EMPTY"}
+{"ticket": "1", "phase": "prepare", "attempt": "40e6dff1144f4f05b1f3933f8b2575e3"}
+{"ticket": "1", "phase": "agent", "attempt": "40e6dff1144f4f05b1f3933f8b2575e3"}
+fake agent ticket 1: process completed (external verification still required)
+
+{"ticket": "1", "phase": "verify", "attempt": "40e6dff1144f4f05b1f3933f8b2575e3"}
+test_unexpected_agent_commit_is_preserved (test_boundaries.BoundaryTests.test_unexpected_agent_commit_is_preserved) ... ok
+test_fresh_session_preserves_credentials_and_disables_approval_by_default (test_cline_contract.ClineContractTests.test_fresh_session_preserves_credentials_and_disables_approval_by_default) ... ok
+test_missing_result_or_multiple_sessions_fail_closed (test_cline_contract.ClineContractTests.test_missing_result_or_multiple_sessions_fail_closed) ... ok
+test_zero_exit_aborted_is_distinct_from_completion (test_cline_contract.ClineContractTests.test_zero_exit_aborted_is_distinct_from_completion) ... ok
+test_both_tracker_adapters_select_spec_open_members (test_issue_completion.IssueCompletionTests.test_both_tracker_adapters_select_spec_open_members) ... ok
+{"ticket": "1", "phase": "prepare", "attempt": "be025d3df64d4779a0b9aa0904743799"}
+{"ticket": "1", "phase": "agent", "attempt": "be025d3df64d4779a0b9aa0904743799"}
+{"ticket": "1", "phase": "verify", "attempt": "be025d3df64d4779a0b9aa0904743799"}
+{"ticket": "1", "phase": "report", "attempt": "be025d3df64d4779a0b9aa0904743799"}
+{"ticket": "1", "phase": "accept", "attempt": "be025d3df64d4779a0b9aa0904743799"}
+test_closed_between_prepare_and_agent_is_not_executed (test_issue_completion.IssueCompletionTests.test_closed_between_prepare_and_agent_is_not_executed) ... ok
+{"ticket": "1", "phase": "prepare", "attempt": "f89d0e0edea04bd5a5b23e0e8f071071"}
+{"ticket": "1", "phase": "agent", "attempt": "f89d0e0edea04bd5a5b23e0e8f071071"}
+fake agent ticket 1: process completed (tracker closed check still required)
+
+{"ticket": "1", "phase": "verify", "attempt": "f89d0e0edea04bd5a5b23e0e8f071071"}
+{"ticket": "1", "phase": "report", "attempt": "f89d0e0edea04bd5a5b23e0e8f071071"}
+{"ticket": "1", "phase": "accept", "attempt": "f89d0e0edea04bd5a5b23e0e8f071071"}
+test_closed_is_success_without_external_checks_or_runtime_commit (test_issue_completion.IssueCompletionTests.test_closed_is_success_without_external_checks_or_runtime_commit) ... ok
+test_invalid_tracker_state_fails_closed (test_issue_completion.IssueCompletionTests.test_invalid_tracker_state_fails_closed) ... ok
+{"ticket": "1", "phase": "prepare", "attempt": "282dd0f94f064025abca9b8bb2654fd5"}
+{"ticket": "1", "phase": "agent", "attempt": "282dd0f94f064025abca9b8bb2654fd5"}
+fake agent ticket 1: process completed (tracker closed check still required)
+
+{"ticket": "1", "phase": "verify", "attempt": "282dd0f94f064025abca9b8bb2654fd5"}
+test_lookup_failure_after_worker_is_not_completion (test_issue_completion.IssueCompletionTests.test_lookup_failure_after_worker_is_not_completion) ... ok
+test_no_open_is_successful_empty_queue (test_issue_completion.IssueCompletionTests.test_no_open_is_successful_empty_queue) ... ok
+{"ticket": "1", "phase": "prepare", "attempt": "dd2968684bd1489aa9b295fd69fdedaf"}
+{"ticket": "1", "phase": "agent", "attempt": "dd2968684bd1489aa9b295fd69fdedaf"}
+{"ticket": "1", "phase": "verify", "attempt": "dd2968684bd1489aa9b295fd69fdedaf"}
+{"ticket": "1", "phase": "report", "attempt": "dd2968684bd1489aa9b295fd69fdedaf"}
+{"ticket": "1", "phase": "accept", "attempt": "dd2968684bd1489aa9b295fd69fdedaf"}
+test_nonzero_exit_does_not_override_closed_signal (test_issue_completion.IssueCompletionTests.test_nonzero_exit_does_not_override_closed_signal) ... ok
+test_queue_only_open_and_closed_dependencies_are_satisfied (test_issue_completion.IssueCompletionTests.test_queue_only_open_and_closed_dependencies_are_satisfied) ... ok
+{"run": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\closed-queue tvbfghp9\\state\\runs\\6bc17b9f2bf2483db9c6911653ba9eb4", "status": "FAILED", "reason": "ISSUE_STILL_OPEN"}
+test_real_dagu_open_five_stops_then_closed_verify_only (test_issue_completion.IssueCompletionTests.test_real_dagu_open_five_stops_then_closed_verify_only) ... ok
+{"ticket": "2", "phase": "prepare", "attempt": "3e92e9f67e5b4ff98114c0ae375cb0a2"}
+test_reopened_excluded_blocker_stops_before_agent (test_issue_completion.IssueCompletionTests.test_reopened_excluded_blocker_stops_before_agent) ... ok
+test_cycles_missing_duplicate_empty_rejected (test_planner.PlannerTests.test_cycles_missing_duplicate_empty_rejected) ... ok
+test_dependencies_override_numbers_and_stable_ties (test_planner.PlannerTests.test_dependencies_override_numbers_and_stable_ties) ... ok
+test_only_explicit_sections_are_relations (test_planner.PlannerTests.test_only_explicit_sections_are_relations) ... ok
+test_parent_conflict_rejected (test_planner.PlannerTests.test_parent_conflict_rejected) ... ok
+test_bundle_contains_exact_runtime (test_portable.PortableTests.test_bundle_contains_exact_runtime) ... ok
+test_bundled_dagu_precedes_path_and_network (test_portable.PortableTests.test_bundled_dagu_precedes_path_and_network) ... ok
+test_copied_skill_runs_without_installed_package (test_portable.PortableTests.test_copied_skill_runs_without_installed_package) ... ok
+test_corrupt_bundled_binary_stops_before_execution (test_portable.PortableTests.test_corrupt_bundled_binary_stops_before_execution) ... ok
+test_explicit_version_failure_never_falls_back_to_download (test_portable.PortableTests.test_explicit_version_failure_never_falls_back_to_download) ... ok
+test_hash_mismatch_never_installs_or_executes (test_portable.PortableTests.test_hash_mismatch_never_installs_or_executes) ... ok
+test_monitoring_does_not_claim_server_is_running (test_portable.PortableTests.test_monitoring_does_not_claim_server_is_running) ... ok
+test_monitoring_remembers_project_port_and_preserves_unicode (test_portable.PortableTests.test_monitoring_remembers_project_port_and_preserves_unicode) ... ok
+test_os_lock_excludes_second_process (test_process.ProcessTests.test_os_lock_excludes_second_process) ... ok
+test_supervisor_crash_closes_job (test_process.ProcessTests.test_supervisor_crash_closes_job) ... ok
+test_timeout_kills_descendant (test_process.ProcessTests.test_timeout_kills_descendant) ... ok
+test_tracker_environment_case_insensitive (test_process.ProcessTests.test_tracker_environment_case_insensitive) ... ok
+test_unicode_large_input_and_two_streams (test_process.ProcessTests.test_unicode_large_input_and_two_streams) ... ok
+test_unverified_shell_launcher_blocked (test_process.ProcessTests.test_unverified_shell_launcher_blocked) ... ok
+external verification: passed
+
+{"phase": "verify", "check": "fixture-acceptance", "pid": 12496, "started_at": 1788956551.101373, "argv_executable": "C:\\Users\\hj0712.jo\\vscode\\skill-do-spec\\.venv\\Scripts\\python.exe", "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec \ud55c\uae00 space 60gi_rdp\\state\\worktrees\\bf0924168d5047898c0ce0548bca500c", "ended_at": 1788956551.3110068, "exit_code": 0, "outcome": "EXITED", "tree_termination": "CONFIRMED_JOB_EMPTY"}
+{"run": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec \ud55c\uae00 space 60gi_rdp\\state\\runs\\bf0924168d5047898c0ce0548bca500c", "status": "FAILED", "reason": "VERIFICATION_FAILED"}
+test_failure_five_preserved_and_verify_only_resume (test_runtime.RuntimeTests.test_failure_five_preserved_and_verify_only_resume) ... ok
+test_both_providers_complete_three_pages_and_full_body (test_tracker.TrackerTests.test_both_providers_complete_three_pages_and_full_body) ... ok
+test_both_saved_comment_timeout_reconcile_without_duplicate (test_tracker.TrackerTests.test_both_saved_comment_timeout_reconcile_without_duplicate) ... ok
+test_keys_include_provider_port_prefix_and_writes_require_approval (test_tracker.TrackerTests.test_keys_include_provider_port_prefix_and_writes_require_approval) ... ok
+test_partial_and_login_mismatch_and_hang_fail_closed (test_tracker.TrackerTests.test_partial_and_login_mismatch_and_hang_fail_closed) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 291.576s
+
+OK

@@ -15,6 +15,23 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class PortableTests(unittest.TestCase):
+    def test_bundled_dagu_precedes_path_and_network(self):
+        with patch.dict('os.environ', {'DO_SPEC_DAGU': ''}), patch.object(bootstrap, 'bundled_binary', return_value='bundled-dagu'), patch.object(bootstrap.shutil, 'which') as path, patch.object(bootstrap.urllib.request, 'urlopen') as network:
+            self.assertEqual(bootstrap.resolve(), 'bundled-dagu')
+            path.assert_not_called()
+            network.assert_not_called()
+
+    def test_corrupt_bundled_binary_stops_before_execution(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / 'windows-amd64').mkdir()
+            (root / 'windows-amd64' / 'dagu.exe').write_bytes(b'corrupt')
+            (root / 'manifest.json').write_text(json.dumps({'binaries': {'windows-amd64/dagu.exe': '0'*64}}))
+            with patch.object(bootstrap, 'bundled_home', return_value=root), patch.object(bootstrap.platform, 'system', return_value='Windows'), patch.object(bootstrap.platform, 'machine', return_value='AMD64'), patch.object(bootstrap, 'validate_binary') as execute:
+                with self.assertRaisesRegex(Fault, 'DAGU_BUNDLED_HASH_MISMATCH'):
+                    bootstrap.bundled_binary()
+                execute.assert_not_called()
+
     def test_bundle_contains_exact_runtime(self):
         sources = ROOT / 'src' / 'do_spec'
         bundled = ROOT / 'skills' / 'do-spec' / 'scripts' / 'runtime' / 'do_spec'

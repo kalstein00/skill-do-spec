@@ -1,0 +1,65 @@
+{
+  "stage": "before",
+  "status": "FAILED",
+  "reason": "ISSUE_STILL_OPEN",
+  "run_id": "19278d5c0e6a4f1fa4912bdcf6b43eed",
+  "agent": "real installed Cline 3.0.61, user configured model",
+  "tracker": "local fake JSON",
+  "dagu": "2.11.2 bundled Windows executable",
+  "sessions": [
+    {
+      "ticket": "1",
+      "session_id": "conv_1788956376924_r4txklb",
+      "finish_reason": "completed",
+      "pid": 22140,
+      "exit_code": 0,
+      "tree_termination": "CONFIRMED_JOB_EMPTY"
+    },
+    {
+      "ticket": "2",
+      "session_id": "conv_1788956433069_1q5f2m2",
+      "finish_reason": "completed",
+      "pid": 1080,
+      "exit_code": 0,
+      "tree_termination": "CONFIRMED_JOB_EMPTY"
+    },
+    {
+      "ticket": "3",
+      "session_id": "conv_1788956488217_bygx2vn",
+      "finish_reason": "completed",
+      "pid": 26604,
+      "exit_code": 0,
+      "tree_termination": "CONFIRMED_JOB_EMPTY"
+    },
+    {
+      "ticket": "4",
+      "session_id": "conv_1788956595093_6qx8qhx",
+      "finish_reason": "completed",
+      "pid": 25628,
+      "exit_code": 0,
+      "tree_termination": "CONFIRMED_JOB_EMPTY"
+    },
+    {
+      "ticket": "5",
+      "session_id": "conv_1788956649181_8l9ybba",
+      "finish_reason": "completed",
+      "pid": 24780,
+      "exit_code": 0,
+      "tree_termination": "CONFIRMED_JOB_EMPTY"
+    }
+  ],
+  "issues": {
+    "1": "closed",
+    "2": "closed",
+    "3": "closed",
+    "4": "closed",
+    "5": "open",
+    "6": "open",
+    "7": "open",
+    "8": "open",
+    "9": "open",
+    "10": "open"
+  },
+  "real_remote_issue_writes": false,
+  "success_agents_reexecuted": false
+}

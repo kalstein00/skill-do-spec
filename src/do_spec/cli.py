@@ -125,7 +125,11 @@ def main(argv=None):
                     result["configuration"] = {"status": "BLOCKED", "reason": e.reason}
                 args.dagu = str((Path(args.project).resolve().parent / c["dagu"]).resolve())
                 if c["agent"]["kind"] == "cline":
-                    names.append("cline")
+                    # Use the validated native launcher, not the npm .ps1 shim.
+                    supported = result['configuration'] == 'SUPPORTED_LOCAL_CONTRACT'
+                    result['tools']['cline'] = {'argv': c['agent'].get('argv', []),
+                                                'version': '3.0.61' if supported else None,
+                                                'status': 'SUPPORTED_LOCAL_CONTRACT' if supported else 'UNVERIFIED'}
                 if c["tracker"]["kind"] != "local":
                     names.append({"github": "gh", "forgejo": "tea"}[c["tracker"]["kind"]])
             if args.cline:

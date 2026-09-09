@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-09",
+  "os": "Windows native",
+  "cline_version": "3.0.61",
+  "launcher": "installed Node wrapper cline/bin/cline",
+  "version_exit_code": 0,
+  "help_exit_code": 0,
+  "session_started": true,
+  "auto_approve": false,
+  "isolated_data_directory": true,
+  "requested_output": "DO_SPEC_SMOKE_OK",
+  "smoke_exit_code": 1,
+  "model_completion": false,
+  "error_class": "auth",
+  "error": "Unauthorized; Cline requests account reauthentication",
+  "tree_termination": "CONFIRMED_JOB_EMPTY",
+  "contract_difference": "--retries 0 is invalid; CLI requires an integer >= 1",
+  "actual_cline_e2e": "BLOCKED_AUTHENTICATION",
+  "changed_authentication_or_provider": false,
+  "real_issue_writes": false
+}

@@ -1,0 +1,9 @@
+test_fresh_session_preserves_credentials_and_disables_approval_by_default (test_cline_contract.ClineContractTests.test_fresh_session_preserves_credentials_and_disables_approval_by_default) ... ok
+test_missing_result_or_multiple_sessions_fail_closed (test_cline_contract.ClineContractTests.test_missing_result_or_multiple_sessions_fail_closed) ... ok
+test_unverified_architecture_fails_before_launch (test_cline_contract.ClineContractTests.test_unverified_architecture_fails_before_launch) ... ok
+test_zero_exit_aborted_is_distinct_from_completion (test_cline_contract.ClineContractTests.test_zero_exit_aborted_is_distinct_from_completion) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.010s
+
+OK

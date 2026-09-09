@@ -1,0 +1,454 @@
+{
+  "schema_version": 1,
+  "id": "0f9d23b82bff4f9da6d176aae26ab3a9",
+  "plan_hash": "59ec4f667ca7bb1d145bf4085b27014ce0225c781622a4b04a26109b3250d325",
+  "status": "FAILED",
+  "worktree": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\state\\worktrees\\0f9d23b82bff4f9da6d176aae26ab3a9",
+  "branch": "codex/do-spec-0f9d23b82bff4f9da6d176aae26ab3a9",
+  "head": "473c37d2d7a6d0267092ae0374b747a44f33d7fe",
+  "dispatch": "8fe9a1d487d04f0f9341a8fb2e501fb8",
+  "tickets": {
+    "1": {
+      "status": "ACCEPTED",
+      "next": "IN_PROGRESS",
+      "attempts": [
+        {
+          "id": "02832f9a61724567a888fa887222e31c",
+          "mode": "rerun-agent",
+          "started_at": 1788951818.0905755,
+          "base_head": "473c37d2d7a6d0267092ae0374b747a44f33d7fe",
+          "before_issue": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|1",
+            "number": 1,
+            "state": "open",
+            "observed_at": 1788951818.2311666
+          },
+          "skip_agent": false,
+          "context_hash": "3ca23477b123620f304668bcc2ee311b4ae881ad8eaea27ed613dbb0985e9df1",
+          "before_agent_issue": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|1",
+            "number": 1,
+            "state": "open",
+            "observed_at": 1788951819.3207443
+          },
+          "process": {
+            "pid": 25904,
+            "started_at": 1788951819.3227587,
+            "argv_executable": "C:\\Users\\hj0712.jo\\AppData\\Local\\uv\\cache\\environments-v2\\run-65db01d889044cb8\\Scripts\\python.exe",
+            "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\state\\worktrees\\0f9d23b82bff4f9da6d176aae26ab3a9",
+            "ended_at": 1788951819.4564388,
+            "exit_code": 0,
+            "outcome": "EXITED",
+            "tree_termination": "CONFIRMED_JOB_EMPTY"
+          },
+          "closure": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|1",
+            "number": 1,
+            "state": "closed",
+            "observed_at": 1788951822.980182
+          },
+          "outcome": "ACCEPTED"
+        }
+      ],
+      "mode": "rerun-agent"
+    },
+    "2": {
+      "status": "ACCEPTED",
+      "next": "IN_PROGRESS",
+      "attempts": [
+        {
+          "id": "fdc49968bffa41aaa57181cd341cfc47",
+          "mode": "rerun-agent",
+          "started_at": 1788951824.1397822,
+          "base_head": "473c37d2d7a6d0267092ae0374b747a44f33d7fe",
+          "before_issue": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|2",
+            "number": 2,
+            "state": "open",
+            "observed_at": 1788951824.2803102
+          },
+          "skip_agent": false,
+          "context_hash": "faa33a72af566cf8a33e3abdf4ef3b8cbd14b2715659464b936fd573ac14b3d9",
+          "before_agent_issue": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|2",
+            "number": 2,
+            "state": "open",
+            "observed_at": 1788951825.3774729
+          },
+          "process": {
+            "pid": 17360,
+            "started_at": 1788951825.3814967,
+            "argv_executable": "C:\\Users\\hj0712.jo\\AppData\\Local\\uv\\cache\\environments-v2\\run-65db01d889044cb8\\Scripts\\python.exe",
+            "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\state\\worktrees\\0f9d23b82bff4f9da6d176aae26ab3a9",
+            "ended_at": 1788951825.5157537,
+            "exit_code": 0,
+            "outcome": "EXITED",
+            "tree_termination": "CONFIRMED_JOB_EMPTY"
+          },
+          "closure": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|2",
+            "number": 2,
+            "state": "closed",
+            "observed_at": 1788951829.14798
+          },
+          "outcome": "ACCEPTED"
+        }
+      ],
+      "mode": "rerun-agent"
+    },
+    "3": {
+      "status": "ACCEPTED",
+      "next": "IN_PROGRESS",
+      "attempts": [
+        {
+          "id": "43d6ed7214f1480abbc3c18d0834b5b2",
+          "mode": "rerun-agent",
+          "started_at": 1788951830.3862813,
+          "base_head": "473c37d2d7a6d0267092ae0374b747a44f33d7fe",
+          "before_issue": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|3",
+            "number": 3,
+            "state": "open",
+            "observed_at": 1788951830.5505
+          },
+          "skip_agent": false,
+          "context_hash": "3631eec336a4b059698806c436864847b6852ad34feee612bda2f33c06981606",
+          "before_agent_issue": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|3",
+            "number": 3,
+            "state": "open",
+            "observed_at": 1788951831.9480696
+          },
+          "process": {
+            "pid": 19704,
+            "started_at": 1788951831.9495792,
+            "argv_executable": "C:\\Users\\hj0712.jo\\AppData\\Local\\uv\\cache\\environments-v2\\run-65db01d889044cb8\\Scripts\\python.exe",
+            "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\state\\worktrees\\0f9d23b82bff4f9da6d176aae26ab3a9",
+            "ended_at": 1788951832.1150937,
+            "exit_code": 0,
+            "outcome": "EXITED",
+            "tree_termination": "CONFIRMED_JOB_EMPTY"
+          },
+          "closure": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|3",
+            "number": 3,
+            "state": "closed",
+            "observed_at": 1788951835.6524053
+          },
+          "outcome": "ACCEPTED"
+        }
+      ],
+      "mode": "rerun-agent"
+    },
+    "4": {
+      "status": "ACCEPTED",
+      "next": "IN_PROGRESS",
+      "attempts": [
+        {
+          "id": "d685cb758953407c9062147f992027fb",
+          "mode": "rerun-agent",
+          "started_at": 1788951836.8275151,
+          "base_head": "473c37d2d7a6d0267092ae0374b747a44f33d7fe",
+          "before_issue": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|4",
+            "number": 4,
+            "state": "open",
+            "observed_at": 1788951836.9626899
+          },
+          "skip_agent": false,
+          "context_hash": "75a1d5d4a332906ccc999f1429bf05fea0fc1aa1ac197ff4b47d562f800a354c",
+          "before_agent_issue": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|4",
+            "number": 4,
+            "state": "open",
+            "observed_at": 1788951838.0503669
+          },
+          "process": {
+            "pid": 20116,
+            "started_at": 1788951838.0523765,
+            "argv_executable": "C:\\Users\\hj0712.jo\\AppData\\Local\\uv\\cache\\environments-v2\\run-65db01d889044cb8\\Scripts\\python.exe",
+            "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\state\\worktrees\\0f9d23b82bff4f9da6d176aae26ab3a9",
+            "ended_at": 1788951838.1869004,
+            "exit_code": 0,
+            "outcome": "EXITED",
+            "tree_termination": "CONFIRMED_JOB_EMPTY"
+          },
+          "closure": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|4",
+            "number": 4,
+            "state": "closed",
+            "observed_at": 1788951841.6535296
+          },
+          "outcome": "ACCEPTED"
+        }
+      ],
+      "mode": "rerun-agent"
+    },
+    "5": {
+      "status": "ACCEPTED",
+      "next": "IN_PROGRESS",
+      "attempts": [
+        {
+          "id": "18d6bf746b5c4bf49a8a8546f1901c2a",
+          "mode": "rerun-agent",
+          "started_at": 1788951842.8556037,
+          "base_head": "473c37d2d7a6d0267092ae0374b747a44f33d7fe",
+          "before_issue": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|5",
+            "number": 5,
+            "state": "open",
+            "observed_at": 1788951842.9990954
+          },
+          "skip_agent": false,
+          "context_hash": "9e20f39bab3b6a53eff3668c904bc310c49061ede1bc1ec3f0412a0042cf69ac",
+          "before_agent_issue": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|5",
+            "number": 5,
+            "state": "open",
+            "observed_at": 1788951844.1026022
+          },
+          "process": {
+            "pid": 11736,
+            "started_at": 1788951844.1066332,
+            "argv_executable": "C:\\Users\\hj0712.jo\\AppData\\Local\\uv\\cache\\environments-v2\\run-65db01d889044cb8\\Scripts\\python.exe",
+            "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\state\\worktrees\\0f9d23b82bff4f9da6d176aae26ab3a9",
+            "ended_at": 1788951844.2442603,
+            "exit_code": 0,
+            "outcome": "EXITED",
+            "tree_termination": "CONFIRMED_JOB_EMPTY"
+          },
+          "outcome": "FAILED",
+          "reason": "ISSUE_STILL_OPEN",
+          "failed_phase": "verify"
+        },
+        {
+          "id": "0af561854bf640c9a52f149207f0dbfd",
+          "mode": "verify-only",
+          "started_at": 1788951897.2386844,
+          "base_head": "473c37d2d7a6d0267092ae0374b747a44f33d7fe",
+          "input_tree": "9403f208a9fd8f9dd5f19db51211fb0f537dcd337eb541832055e3433078f25c",
+          "closure": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|5",
+            "number": 5,
+            "state": "closed",
+            "observed_at": 1788951924.158343
+          },
+          "outcome": "ACCEPTED"
+        }
+      ],
+      "mode": "verify-only",
+      "reason": "ISSUE_STILL_OPEN",
+      "failed_phase": "verify"
+    },
+    "6": {
+      "status": "ACCEPTED",
+      "next": "IN_PROGRESS",
+      "attempts": [
+        {
+          "id": "647aa7023d99446d92f55f6ad9d0c75f",
+          "mode": "rerun-agent",
+          "started_at": 1788951925.3542464,
+          "base_head": "473c37d2d7a6d0267092ae0374b747a44f33d7fe",
+          "before_issue": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|6",
+            "number": 6,
+            "state": "open",
+            "observed_at": 1788951925.4963722
+          },
+          "skip_agent": false,
+          "context_hash": "4bbdab3ab3fc3c77ecddb893c75665107b40e04020493f9aaa5766389bcf44e5",
+          "before_agent_issue": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|6",
+            "number": 6,
+            "state": "open",
+            "observed_at": 1788951926.614371
+          },
+          "process": {
+            "pid": 17252,
+            "started_at": 1788951926.6161213,
+            "argv_executable": "C:\\Users\\hj0712.jo\\AppData\\Local\\uv\\cache\\environments-v2\\run-65db01d889044cb8\\Scripts\\python.exe",
+            "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\state\\worktrees\\0f9d23b82bff4f9da6d176aae26ab3a9",
+            "ended_at": 1788951926.7523165,
+            "exit_code": 0,
+            "outcome": "EXITED",
+            "tree_termination": "CONFIRMED_JOB_EMPTY"
+          },
+          "closure": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|6",
+            "number": 6,
+            "state": "closed",
+            "observed_at": 1788951930.3078904
+          },
+          "outcome": "ACCEPTED"
+        }
+      ],
+      "mode": "rerun-agent"
+    },
+    "7": {
+      "status": "ACCEPTED",
+      "next": "IN_PROGRESS",
+      "attempts": [
+        {
+          "id": "68e2aa8c8682494eb775da98ef017e05",
+          "mode": "rerun-agent",
+          "started_at": 1788951931.4732072,
+          "base_head": "473c37d2d7a6d0267092ae0374b747a44f33d7fe",
+          "before_issue": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|7",
+            "number": 7,
+            "state": "open",
+            "observed_at": 1788951931.6245608
+          },
+          "skip_agent": false,
+          "context_hash": "24c98ba4e359c9d59772fc5bb243607127b3089dc2a0bc8b14fc99ce909db15a",
+          "before_agent_issue": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|7",
+            "number": 7,
+            "state": "open",
+            "observed_at": 1788951932.7292633
+          },
+          "process": {
+            "pid": 23484,
+            "started_at": 1788951932.7312756,
+            "argv_executable": "C:\\Users\\hj0712.jo\\AppData\\Local\\uv\\cache\\environments-v2\\run-65db01d889044cb8\\Scripts\\python.exe",
+            "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\state\\worktrees\\0f9d23b82bff4f9da6d176aae26ab3a9",
+            "ended_at": 1788951932.864778,
+            "exit_code": 0,
+            "outcome": "EXITED",
+            "tree_termination": "CONFIRMED_JOB_EMPTY"
+          },
+          "closure": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|7",
+            "number": 7,
+            "state": "closed",
+            "observed_at": 1788951936.5731456
+          },
+          "outcome": "ACCEPTED"
+        }
+      ],
+      "mode": "rerun-agent"
+    },
+    "8": {
+      "status": "ACCEPTED",
+      "next": "IN_PROGRESS",
+      "attempts": [
+        {
+          "id": "7a745eaaf55041cdac22588d36f393cc",
+          "mode": "rerun-agent",
+          "started_at": 1788951937.7598667,
+          "base_head": "473c37d2d7a6d0267092ae0374b747a44f33d7fe",
+          "before_issue": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|8",
+            "number": 8,
+            "state": "open",
+            "observed_at": 1788951937.9333277
+          },
+          "skip_agent": false,
+          "context_hash": "1e5701ec817978af7a438c18e2eeae4426288aa9d92256523109f9d1e605a9bc",
+          "before_agent_issue": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|8",
+            "number": 8,
+            "state": "open",
+            "observed_at": 1788951939.0488167
+          },
+          "process": {
+            "pid": 18444,
+            "started_at": 1788951939.0513425,
+            "argv_executable": "C:\\Users\\hj0712.jo\\AppData\\Local\\uv\\cache\\environments-v2\\run-65db01d889044cb8\\Scripts\\python.exe",
+            "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\state\\worktrees\\0f9d23b82bff4f9da6d176aae26ab3a9",
+            "ended_at": 1788951939.1892846,
+            "exit_code": 0,
+            "outcome": "EXITED",
+            "tree_termination": "CONFIRMED_JOB_EMPTY"
+          },
+          "closure": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|8",
+            "number": 8,
+            "state": "closed",
+            "observed_at": 1788951942.6827524
+          },
+          "outcome": "ACCEPTED"
+        }
+      ],
+      "mode": "rerun-agent"
+    },
+    "9": {
+      "status": "ACCEPTED",
+      "next": "IN_PROGRESS",
+      "attempts": [
+        {
+          "id": "d6310e6a342d4a48adcff1e762330600",
+          "mode": "rerun-agent",
+          "started_at": 1788951943.886527,
+          "base_head": "473c37d2d7a6d0267092ae0374b747a44f33d7fe",
+          "before_issue": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|9",
+            "number": 9,
+            "state": "open",
+            "observed_at": 1788951944.031757
+          },
+          "skip_agent": false,
+          "context_hash": "6cae91e20843770b8957d3a1d15b3e1fc94632e4e3430e03ab0a6b111d0aea15",
+          "before_agent_issue": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|9",
+            "number": 9,
+            "state": "open",
+            "observed_at": 1788951945.1110172
+          },
+          "process": {
+            "pid": 25828,
+            "started_at": 1788951945.113031,
+            "argv_executable": "C:\\Users\\hj0712.jo\\AppData\\Local\\uv\\cache\\environments-v2\\run-65db01d889044cb8\\Scripts\\python.exe",
+            "cwd": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\state\\worktrees\\0f9d23b82bff4f9da6d176aae26ab3a9",
+            "ended_at": 1788951945.2499669,
+            "exit_code": 0,
+            "outcome": "EXITED",
+            "tree_termination": "CONFIRMED_JOB_EMPTY"
+          },
+          "closure": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|9",
+            "number": 9,
+            "state": "closed",
+            "observed_at": 1788951948.8014212
+          },
+          "outcome": "ACCEPTED"
+        }
+      ],
+      "mode": "rerun-agent"
+    },
+    "10": {
+      "status": "FAILED",
+      "next": "IN_PROGRESS",
+      "attempts": [
+        {
+          "id": "2b823f31760f4c5abef2becc3224b43d",
+          "mode": "rerun-agent",
+          "started_at": 1788951949.9503584,
+          "base_head": "473c37d2d7a6d0267092ae0374b747a44f33d7fe",
+          "before_issue": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|10",
+            "number": 10,
+            "state": "open",
+            "observed_at": 1788951950.0948942
+          },
+          "skip_agent": false,
+          "context_hash": "29306020d0fdc681efcb8a293e6ca6cb0c43a2d35a8e7a1147a13351d7eeb746",
+          "before_agent_issue": {
+            "key": "local|C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-binary-f0f2a720\\demo\\issues.json|10",
+            "number": 10,
+            "state": "open",
+            "observed_at": 1788951951.1785505
+          },
+          "outcome": "FAILED",
+          "reason": "INTERNAL_ERROR",
+          "failed_phase": "agent"
+        }
+      ],
+      "mode": "rerun-agent",
+      "reason": "INTERNAL_ERROR",
+      "failed_phase": "agent"
+    }
+  },
+  "reason": "INTERNAL_ERROR",
+  "exit_code": 15
+}
