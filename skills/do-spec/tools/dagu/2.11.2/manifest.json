@@ -1,0 +1,22 @@
+{
+  "version": "2.11.2",
+  "archives": {
+    "windows": {
+      "url": "https://github.com/dagucloud/dagu/releases/download/v2.11.2/dagu_2.11.2_windows_amd64.tar.gz",
+      "sha256": "3e435358de147ee74ceb49d21220dc49f13325fb2e5ef2ffd130559737c61672"
+    },
+    "linux": {
+      "url": "https://github.com/dagucloud/dagu/releases/download/v2.11.2/dagu_2.11.2_linux_amd64.tar.gz",
+      "sha256": "ccf33ff9d86e2463faeb7e7b30ebca82a96e8c76b6ea2e282adb506db69feb3d"
+    }
+  },
+  "binaries": {
+    "windows-amd64/dagu.exe": "866aa991f48772b8492aa3a8483bcdb74a6f58cf187acf40d114b78525141bd9",
+    "linux-amd64/dagu": "14f4402c23978efd3e2dee172dc0f2bb15fffcf0817596d63be4873b3551ecb1"
+  },
+  "bundled_archives": {
+    "windows-amd64.zip": "709c800c2cf9f08a747dc01e782800ef804671ef20d445c0c75154deddb38aa8",
+    "linux-amd64.zip": "3838e5a03ef1f9760e4ecd7588aa67ad36b7239a0490feb20e48338a472ed77e"
+  },
+  "source_url": "https://github.com/dagucloud/dagu/tree/v2.11.2"
+}

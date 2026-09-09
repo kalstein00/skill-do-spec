@@ -18,7 +18,7 @@
 
 스킬을 읽은 에이전트가 **스킬 내부의 `scripts/run.py`를 `uv run`으로 실행**합니다. 의존성 준비, 계획 생성, 순차 실행, 상태 조회와 모니터링 웹 시작까지 에이전트가 담당하며 실제 웹 주소를 안내합니다. 사용자가 CLI 명령을 입력하거나 별도 터미널을 여는 절차는 기본 사용 흐름에 없습니다. uv와 Git이 필요하고, 첫 방문의 웹 계정 설정은 사용자가 진행합니다.
 
-실행 코드가 폴더에 포함되어 별도 wheel/pip 설치는 필요 없습니다. Python은 uv가 준비합니다. 배포 ZIP에는 Windows/Linux x64 Dagu 2.11.2가 `tools/dagu/2.11.2/`에 들어 있으며 실행 전에 해시를 검사합니다. Git에는 대용량 실행 파일을 넣지 않으므로 저장소에서 배포본을 만들 때는 `python scripts/bundle_skill.py --with-dagu`를 실행합니다. 기본 모니터링 주소는 `http://127.0.0.1:8080`이며, 다른 포트를 사용하면 실제 주소를 안내합니다. Windows Cline 3.0.61 + 로컬 tracker 전용 adapter를 추가했습니다. 실제 원격 tracker와 다른 Cline/OS 조합은 계속 미검증입니다.
+실행 코드가 폴더에 포함되어 별도 wheel/pip 설치는 필요 없습니다. Python은 uv가 준비합니다. Dagu 2.11.2는 `tools/dagu/2.11.2/windows-amd64.zip`과 `linux-amd64.zip`으로 포함되며, **스킬 최초 사용 시 현재 OS의 실행 파일만 자동으로 풉니다.** 이후에는 해시를 확인해 재사용합니다. 압축 파일은 각각 100MiB 미만이라 일반 Git에 저장할 수 있고, 풀린 실행 파일은 Git에서 제외합니다. 별도 install hook이나 수동 압축 해제는 필요 없습니다. 개발자는 `python scripts/bundle_skill.py --with-dagu`로 압축 파일을 재생성할 수 있습니다. 기본 모니터링 주소는 `http://127.0.0.1:8080`입니다. Windows Cline 3.0.61 + 로컬 tracker 전용 adapter를 지원하며 원격 tracker와 다른 Cline/OS 조합은 미검증입니다.
 
 [스킬 실행 지침](skills/do-spec/SKILL.md) · [에이전트용 내부 명령 참고](skills/do-spec/references/usage.md). 아래는 standalone 도구를 직접 점검하려는 개발자용 선택 사항입니다.
 

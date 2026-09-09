@@ -1,0 +1,8 @@
+test_corrupt_archive_stops_before_launch (test_bundled_zip.BundledZipTests.test_corrupt_archive_stops_before_launch) ... ok
+test_first_use_extracts_only_binary_and_reuses_it (test_bundled_zip.BundledZipTests.test_first_use_extracts_only_binary_and_reuses_it) ... ok
+test_missing_exact_member_cannot_extract_traversal_path (test_bundled_zip.BundledZipTests.test_missing_exact_member_cannot_extract_traversal_path) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.035s
+
+OK

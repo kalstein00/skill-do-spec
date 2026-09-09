@@ -22,6 +22,11 @@ with zipfile.ZipFile(REPO / 'dist/do-spec-skill.zip') as archive:
     archive.extractall(skill)
 runner = skill / 'do-spec' / 'scripts' / 'run.py'
 dagu = skill / 'do-spec' / 'tools' / 'dagu' / '2.11.2' / 'windows-amd64' / 'dagu.exe'
+# First-use extraction through the copied runner; no separate installation hook.
+import subprocess
+setup_env = os.environ.copy()
+setup_env.pop('DO_SPEC_DAGU', None)
+subprocess.run([sys.executable, str(runner), 'setup'], check=True, stdout=subprocess.DEVNULL, env=setup_env)
 project = create(root / 'fixture', dagu, 5)
 config = read(project)
 config['agent'] = {'kind': 'cline', 'contract': 'cline-3.0.61-local',

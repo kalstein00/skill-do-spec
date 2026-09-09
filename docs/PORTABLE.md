@@ -1,5 +1,7 @@
 # Portable skill verification
 
+Current first-use packaging: Dagu is carried as separate Windows/Linux ZIP files inside the skill; each is under 50 MiB. The runner extracts the current platform on first use, checks archive/binary hashes and version, then reuses the executable. `evidence/zip-first-use.json` records actual Windows uv first-use/reuse checks; three extraction tests and eight portable tests passed. No install hook or manual unzip is required. Older raw-binary packaging descriptions below are historical.
+
 Historical source-only distribution report below. The 2026-09-09 prepared ZIP also contains Windows/Linux Dagu binaries, their licenses and manifest; build with `scripts/bundle_skill.py --with-dagu`. The skill agent now owns the persistent UI tool session instead of asking the user to launch a terminal. Cline's version-scoped local adapter and its current E2E evidence supersede the earlier all-Cline-blocked statement; Linux and remote tracker integration remain unverified.
 
 Commands executed on Windows with Python 3.12.14, uv 0.10.9, Git 2.55.0.windows.5 and actual Dagu 2.11.2:

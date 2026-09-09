@@ -7,6 +7,7 @@ import shutil
 import tarfile
 import tempfile
 import urllib.request
+import zipfile
 from .core import Fault, lock, read
 from .engine import PIN, validate_binary
 
@@ -35,10 +36,31 @@ def bundled_binary():
         return None
     flavor = ARCHIVES[system][0]
     path = home / (flavor + '-amd64') / ('dagu.exe' if system == 'Windows' else 'dagu')
-    if not path.exists():
+    archive = home / (flavor + '-amd64.zip')
+    if not path.exists() and not archive.exists():
         return None
     manifest = read(home / 'manifest.json')
     expected = manifest['binaries'][path.relative_to(home).as_posix()]
+    if not path.exists():
+        # Extract only the requested native binary, never archive-provided paths.
+        with lock(home / 'install.lock'):
+            if not path.exists():
+                if hashlib.sha256(archive.read_bytes()).hexdigest() != manifest['bundled_archives'][archive.name]:
+                    raise Fault('DAGU_BUNDLED_ARCHIVE_HASH_MISMATCH')
+                path.parent.mkdir(parents=True, exist_ok=True)
+                with tempfile.TemporaryDirectory(dir=path.parent) as tmp:
+                    candidate = Path(tmp) / path.name
+                    with zipfile.ZipFile(archive) as package:
+                        matches = [i for i in package.infolist() if i.filename == path.name and not i.is_dir()]
+                        if len(matches) != 1 or matches[0].file_size > 256 * 1024 * 1024:
+                            raise Fault('DAGU_BUNDLED_ARCHIVE_INVALID')
+                        with package.open(matches[0]) as source, candidate.open('wb') as dest:
+                            shutil.copyfileobj(source, dest)
+                    if hashlib.sha256(candidate.read_bytes()).hexdigest() != expected:
+                        raise Fault('DAGU_BUNDLED_HASH_MISMATCH')
+                    candidate.chmod(0o755)
+                    validate_binary(str(candidate))
+                    os.replace(candidate, path)
     if hashlib.sha256(path.read_bytes()).hexdigest() != expected:
         raise Fault('DAGU_BUNDLED_HASH_MISMATCH')
     if system == 'Linux':

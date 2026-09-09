@@ -1,5 +1,7 @@
 # Dependencies and license boundaries
 
+Current compressed packaging: the two native Dagu ZIPs and their LICENSE/manifest are eligible for ordinary Git tracking. Expanded executables are generated on first use and ignored. The outer skill ZIP embeds the compressed native archives. The statement below that all native artifacts are ignored describes the previous expanded-binary layout.
+
 2026-09-09 local distribution update: the prepared skill and ZIP now include the official Windows/Linux amd64 Dagu 2.11.2 binaries, their upstream GPL v3 LICENSE files and a manifest linking the matching upstream source tag. They are ignored by Git and have not been published remotely. Historical statements below about a source-only ZIP apply to the previous distribution. Before public binary distribution, provide corresponding source under the upstream license; a source URL is not itself a bundled source archive.
 
 do-spec uses Python's standard library and launches external executables. It does not embed or redistribute Dagu, Git, tea, gh, or agent binaries. `.tools` is an ignored developer download directory, not a distribution artifact.

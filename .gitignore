@@ -6,4 +6,6 @@ __pycache__/
 build/
 dist/
 .pytest_cache/
-skills/do-spec/tools/dagu/
+skills/do-spec/tools/dagu/*/windows-amd64/
+skills/do-spec/tools/dagu/*/linux-amd64/
+skills/do-spec/tools/dagu/*/install.lock

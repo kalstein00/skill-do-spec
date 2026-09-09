@@ -1,5 +1,11 @@
 # Compatibility evidence — 2026-09-07
 
+## Compressed Dagu first-use packaging
+
+The skill now carries `windows-amd64.zip` (49,212,040 bytes / 46.93 MiB) and `linux-amd64.zip` (48,619,553 bytes / 46.37 MiB) under `tools/dagu/2.11.2`. Each is eligible for ordinary Git tracking; only generated platform directories and install locks are ignored. The outer skill ZIP contains these archives, not expanded binaries. setup/init/demo validate the archive SHA256, extract only the exact native executable to a temporary file, validate executable hash/version, then atomically install it. Subsequent runs reuse the valid file. No installation hook is needed; first use requires a writable skill folder.
+
+Windows evidence: copied a ZIP with no executable present; two real `uv run --offline ... setup` calls extracted Dagu 2.11.2 once and reused it without changing mtime; Linux executable was not extracted. Three archive tests cover first-use/reuse, corruption and traversal; eight portable tests also passed. See `evidence/zip-first-use.json`, `evidence/tests-zip-extraction.txt`, and `evidence/tests-zip-portable.txt`. Real Cline execution was not repeated for this packaging-only change; the earlier real E2E remains separately scoped below. Linux extraction/execution on a Linux host remains unverified.
+
 ## 2026-09-09 installed Cline and bundled Dagu
 
 **Current result:** actual Windows x64 Cline 3.0.61 + bundled Dagu 2.11.2 + local fake tracker E2E passed. Exactly five distinct Cline sessions ran before the deliberate open issue 5 stopped successors (exit 11). After test-operator completion of issue 5, verify-only resumed to SUCCEEDED (exit 0), with ten distinct sessions total and no rerun of the original five. Nine sessions emitted actual successful verification output; the intentionally failed fifth was repaired outside the agent as part of the recovery test. See [full scope and reproduction](docs/REAL-CLINE-E2E.md). This certifies neither remote tracker writes, upstream implement skill invocation, Linux nor other Cline versions/architectures.

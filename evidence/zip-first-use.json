@@ -1,0 +1,9 @@
+{
+  "windows_first_use": "PASS",
+  "repeat_reused_executable": true,
+  "linux_not_extracted": true,
+  "initial_executable_absent": true,
+  "uv_offline": true,
+  "dagu_version": "2.11.2",
+  "executable": "C:\\Users\\hj0712.jo\\AppData\\Local\\Temp\\do-spec-zip-first-mwtk0jtg\\do-spec\\tools\\dagu\\2.11.2\\windows-amd64\\dagu.exe"
+}
